@@ -5,7 +5,7 @@ Dia 1
     
 Dia 2
     Hemos progresado en el mockup.
-    Terminamos el diagrama de UML
-    Terminamos en Empathy map
-    Y el ingles
-    
+    Terminamos el diagrama de UML.
+    Terminamos en Empathy map.
+    Terminamos ingles.
+    Hemos progresado con el HTML , CSS y con la base de datos.
