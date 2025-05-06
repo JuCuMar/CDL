@@ -57,10 +57,24 @@
                 <a href="https://twitter.com"><img src="img/tw.png"></a>
                 <a href="https://facebook.com"><img src="img/fb.png"></a>
             </div>
+
+            <div>
+                <img id="pato" src="img/pato.png" alt="Pato">
+                <audio id="sound" src="pato.mp3" preload="none"></audio>
+            </div>
         </div>
         <br>
         <h6>© 2025 CRIPTA-DEL-LORE</h6>
         </div>
+    </footer>
+<script>
+    const pato = document.getElementById('pato');
+    const sound = document.getElementById('sound');
+
+    pato.addEventListener('click', () => {
+        sound.play();
+    });
+    </script>
 </body>
 
 </html>
