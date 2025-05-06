@@ -1,3 +1,8 @@
+<?php
+require_once "autoload.php";
+$user = new Usuario();
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -13,22 +18,12 @@
         <a href="#inicio"><img src="img/logo2.png"></a>
     </header>
     <nav>
-        <a href="#videojuegos">VIDEOJUEGOS</a>
-        <a href="#juegosdemesa">JUEGOS DE MESA</a>
-        <a href="#figuras">FIGURAS</a>
-        <a href="#libros">LIBROS</a>
-
-        <form action="#" method="post" id="busqueda">
-            <input type="text" id="search" placeholder="Buscar...">
-            <button type="submit">Buscar</button>
-        </form>
+        <a href="#perfil">PERFIL</a>
+        <a href="#compras">COMPRAS</a>
+        <a href="#carrito">CARRITO</a>
+        <a href="#opciones">OPCIONES</a>
     </nav>
 
-
-
-    <section>
-        <h1 style="font-size: 4em">CONTENIDO</h1>
-    </section>
 
     </body>
 
