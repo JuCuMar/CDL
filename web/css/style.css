@@ -1,0 +1,166 @@
+/*#00c683   #f5f5f5*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    list-style: none;
+}
+
+body{
+    background-color: #bad8cb;
+    min-height: 100vh;
+    position: relative;
+}
+
+header{
+    padding: 0;
+    margin: 0;
+    background-color: #004443;
+}
+
+nav{
+    background-color: #004B4E;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 35px;
+}
+
+section {
+    margin-left: 55px;
+    margin-bottom: 10px;
+    color: #336665;
+}
+/**/
+
+
+footer{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: #004443;
+    height: 170px;
+    text-align: center;
+
+}
+
+
+/**/
+
+
+
+header img{
+    height: 125px;
+    margin-left: 30px;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    padding: 12px;
+    transition: all 0.15s;
+    justify-content: center;
+    display: flex;
+    flex-grow: 1;
+}
+
+nav a:hover{
+    background-color: #ffc107;
+}
+
+#busqueda{
+    display: inline;
+}
+
+#search{
+    color:black;
+}
+
+button{
+    background-color: rgb(61, 163, 61);
+    border: 2px solid #002E34;
+    border-radius: 3px;
+    margin-right: 15px;
+    color: #f6f6f6;
+}
+
+button:active {
+    transform: translateY(1px);
+    background-color: #3e8e41; 
+  }
+
+input {
+    margin-left: 10px;
+}
+
+input, button {
+    padding: 7px;
+}
+
+
+
+
+.footer-row {
+    display: flex;
+    padding-top: 10px;
+    flex-wrap: wrap;
+}
+
+footer div a {
+    padding: 4px;
+    text-decoration: none;
+}
+
+footer div a img {
+    height: 30px;
+    padding: 3px;
+}
+
+.footer-links, .footer-img{
+    display: inline-block;
+    width: 25%;
+}
+
+.footer-links h4, .footer-img h4{
+    margin-bottom: 11px;
+    text-decoration: underline;
+    font-size: 16px;
+    color: #f6f6f6;
+}
+
+.footer-links ul {
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links ul li{
+    padding: 2px;
+}
+
+.footer-links ul li a{
+    display: inline-block;
+    color: #00c683;
+    font-size: 14px;
+}
+
+.footer-links ul li a:hover{
+    color:  #ffc107;
+    transform: scale(1.1);
+    transition: transform 0.1s ease;
+}
+
+.footer-img a img:hover{
+    transform: scale(1.2);
+    transition: transform 0.1s ease;
+}
+
+footer h6 {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    padding-bottom: 2px;
+    color: #f6f6f6;
+}
