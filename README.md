@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# Mi proyecto
-=======
 # CDL
 
 Dia 1
