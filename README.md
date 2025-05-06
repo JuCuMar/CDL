@@ -9,4 +9,3 @@ Dia 2
     Terminamos en Empathy map.
     Terminamos ingles.
     Hemos progresado con el HTML , CSS y con la base de datos.
->>>>>>> 7b54eae790c21d484a67915db6abbb12a8baf344
