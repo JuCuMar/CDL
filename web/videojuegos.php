@@ -9,9 +9,11 @@
 </head>
 
 <body>
+
     <header>
-        <a href="#inicio"><img src="img/logo2.png"></a>
+        <a href="http://localhost:8080/PROYECTO/subir/web/"><img src="img/logo2.png"></a>
     </header>
+
     <nav>
         <a href="#videojuegos">VIDEOJUEGOS</a>
         <a href="#juegosdemesa">JUEGOS DE MESA</a>
@@ -24,32 +26,44 @@
         </form>
     </nav>
 
-    <h1>Videojuegos</h1>
+    <h1>VIDEOJUEGOS</h1>
+    
     <section id="section_videojuegos">
-        
         <div class="container_videojuegos">
-            <div class="recuadro"><img class="miniatura" src="img/img_predet.jpg"></div>
-            <div class="texto_noticia"></div>
+            <div class="recuadro"><a href=""><img class="miniatura_videojuego" src="img/nov3.jpg"></div>
+            <div class="pie_miniatura"><h3>BALDUR'S GATE</h3>Precio: 31'99€</a></div>
         </div>
         <div class="container_videojuegos">
-            <div class="recuadro"><img class="miniatura" src="img/img_predet.jpg"></div>
-            <div class="texto_noticia"></div>
+            <div class="recuadro"><a href=""><img class="miniatura_videojuego" src="img/nov3.jpg"></div>
+            <div class="pie_miniatura"><h3>BALDUR'S GATE</h3>Precio: 31'99€</a></div>
         </div>
         <div class="container_videojuegos">
-            <div class="recuadro"><img class="miniatura" src="img/img_predet.jpg"></div>
-            <div class="texto_noticia"></div>
+            <div class="recuadro"><a href=""><img class="miniatura_videojuego" src="img/nov3.jpg"></div>
+            <div class="pie_miniatura"><h3>BALDUR'S GATE</h3>Precio: 31'99€</a></div>
         </div>
         <div class="container_videojuegos">
-            <div class="recuadro"><img class="miniatura" src="img/img_predet.jpg"></div>
-            <div class="texto_noticia"></div>
+            <div class="recuadro"><a href=""><img class="miniatura_videojuego" src="img/nov3.jpg"></div>
+            <div class="pie_miniatura"><h3>BALDUR'S GATE</h3>Precio: 31'99€</a></div>
         </div>
         <div class="container_videojuegos">
-            <div class="recuadro"><img class="miniatura" src="img/img_predet.jpg"></div>
-            <div class="texto_noticia"></div>
+            <div class="recuadro"><a href=""><img class="miniatura_videojuego" src="img/nov3.jpg"></div>
+            <div class="pie_miniatura"><h3>BALDUR'S GATE</h3>Precio: 31'99€</a></div>
         </div>
         <div class="container_videojuegos">
-            <div class="recuadro"><img class="miniatura" src="img/img_predet.jpg"></div>
-            <div class="texto_noticia"></div>
+            <div class="recuadro"><a href=""><img class="miniatura_videojuego" src="img/nov3.jpg"></div>
+            <div class="pie_miniatura"><h3>BALDUR'S GATE</h3>Precio: 31'99€</a></div>
+        </div>
+        <div class="container_videojuegos">
+            <div class="recuadro"><a href=""><img class="miniatura_videojuego" src="img/nov3.jpg"></div>
+            <div class="pie_miniatura"><h3>BALDUR'S GATE</h3>Precio: 31'99€</a></div>
+        </div>
+        <div class="container_videojuegos">
+            <div class="recuadro"><a href=""><img class="miniatura_videojuego" src="img/nov3.jpg"></div>
+            <div class="pie_miniatura"><h3>BALDUR'S GATE</h3>Precio: 31'99€</a></div>
+        </div>
+        <div class="container_videojuegos">
+            <div class="recuadro"><a href=""><img class="miniatura_videojuego" src="img/nov3.jpg"></div>
+            <div class="pie_miniatura"><h3>BALDUR'S GATE</h3>Precio: 31'99€</a></div>
         </div>
         
     </section>

@@ -10,10 +10,10 @@
 
 <body>
     <header>
-        <a href="#inicio"><img src="img/logo2.png"></a>
+        <a href="http://localhost:8080/PROYECTO/subir/web/"><img src="img/logo2.png"></a>
     </header>
     <nav>
-        <a href="#videojuegos">VIDEOJUEGOS</a>
+        <a href="http://localhost:8080/PROYECTO/subir/web/videojuegos.php">VIDEOJUEGOS</a>
         <a href="#juegosdemesa">JUEGOS DE MESA</a>
         <a href="#figuras">FIGURAS</a>
         <a href="#libros">LIBROS</a>
@@ -25,7 +25,7 @@
     </nav>
 
 
-    <h1>Novedades</h1>
+    <h1>NOVEDADES</h1>
     <section>
         
         <div class="container_inicio">
