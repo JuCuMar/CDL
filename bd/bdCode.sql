@@ -118,7 +118,7 @@ INSERT INTO Producto (nombre, stock, precio, id_categoria) VALUES ('Cyberpunk 20
 INSERT INTO Producto (nombre, stock, precio, id_categoria) VALUES ('Satisfactory', 68, 40, 1);
 
 INSERT INTO Producto (nombre, stock, precio, id_categoria) VALUES ('Catan', 30, 40, 2);
-INSERT INTO Producto (nombre, stock, precio, id_categoria) VALUES ('Campaña para el norte de africa', 1, 400, 2);
+INSERT INTO Producto (nombre, stock, precio, id_categoria) VALUES ('Campaña del norte de africa', 1, 400, 2);
 INSERT INTO Producto (nombre, stock, precio, id_categoria) VALUES ('Cthulhu Death May Never Die', 5, 100, 2);
 INSERT INTO Producto (nombre, stock, precio, id_categoria) VALUES ('Las mansiones de la locura', 10, 110, 2);
 INSERT INTO Producto (nombre, stock, precio, id_categoria) VALUES ('Cartas contra la humanidad', 100, 30, 2);
