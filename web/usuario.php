@@ -20,7 +20,7 @@ $user = new Usuario();
     <nav>
         <a href="#perfil">PERFIL</a>
         <a href="#compras">COMPRAS</a>
-        <a href="#carrito">CARRITO</a>
+        <a href="#deseados">DESEADOS</a>
         <a href="#opciones">OPCIONES</a>
     </nav>
 
