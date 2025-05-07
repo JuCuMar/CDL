@@ -24,8 +24,9 @@
         </form>
     </nav>
 
+    <h1>Videojuegos</h1>
     <section id="section_videojuegos">
-        <h1>Videojuegos</h1>
+        
         <div class="container_videojuegos">
             <div class="recuadro"><img class="miniatura" src="img/img_predet.jpg"></div>
             <div class="texto_noticia"></div>

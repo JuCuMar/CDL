@@ -25,20 +25,20 @@
     </nav>
 
 
-
+    <h1>Novedades</h1>
     <section>
-        <h1>Novedades</h1>
+        
         <div class="container_inicio">
-            <div class="recuadro"><img class="miniatura" height="180px" src="img/nov1.jpg"></div>
-            <div class="texto_noticia"><p>The Elder Scrolls IV: Oblivion™ Remastered moderniza el Juego del Año de 2006 con unos gráficos impresionantes y una jugabilidad mejorada. Explora el vasto paisaje de Cyrodiil como nunca e impide que las fuerzas de Oblivion usurpen el territorio en uno de los mejores RPG de la historia, desarrollado por los galardonados Bethesda Game Studios.</p></div>
+            <div class="recuadro"><img class="miniatura" src="img/nov1.jpg"></div>
+            <div class="texto_noticia"><p><h3>¡Ya disponible The Elder Scrolls IV: Oblivion™ Remastered!</h3><br>The Elder Scrolls IV: Oblivion™ Remastered moderniza el Juego del Año de 2006 con unos gráficos impresionantes y una jugabilidad mejorada. Explora el vasto paisaje de Cyrodiil como nunca e impide que las fuerzas de Oblivion usurpen el territorio en uno de los mejores RPG de la historia, desarrollado por los galardonados Bethesda Game Studios.</p></div>
         </div>
         <div class="container_inicio">
-            <div class="recuadro"><img class="miniatura" height="180px" src="img/nov2.jpg"></div>
-            <div class="texto_noticia"><p>Desvelado un nuevo Caballero Imperial: el Defender. El modelo Defensor amplía el catálogo de Caballeros Questoris de los Caballeros Imperiales como gran novedad de su Codex de Décima Edicion.</p></div>
+            <div class="recuadro"><img class="miniatura" src="img/nov2.jpg"></div>
+            <div class="texto_noticia"><p><h3>Nuevos personajes de Warhammer</h3><br>Desvelado un nuevo Caballero Imperial: el Defender. El modelo Defensor amplía el catálogo de Caballeros Questoris de los Caballeros Imperiales como gran novedad de su Codex de Décima Edicion.</p></div>
         </div>
         <div class="container_inicio">
-            <div class="recuadro"><img class="miniatura" height="180px" src="img/nov3.jpg"></div>
-            <div class="texto_noticia"><p>¿Por qué Baldur's Gate 3 no ha tenido DLC? Larian responde con honestidad: 'Es aburrido'. Larian descartó hacer DLC para Baldur's Gate 3 por falta de motivacion creativa; el estudio prefiere concentrarse en nuevos proyectos ambiciosos que entusisasmen a su equipo.</p></div>
+            <div class="recuadro"><img class="miniatura" src="img/nov3.jpg"></div>
+            <div class="texto_noticia"><p><h3>Larian niega un DLC de Baldur's Gate 3</h3><br>¿Por qué Baldur's Gate 3 no ha tenido DLC? Larian responde con honestidad: 'Es aburrido'. Larian descartó hacer DLC para Baldur's Gate 3 por falta de motivacion creativa; el estudio prefiere concentrarse en nuevos proyectos ambiciosos que entusisasmen a su equipo.</p></div>
         </div>
     </section>
 
