@@ -1,8 +1,3 @@
-<?php
-require_once "autoloader.php";
-$user = new Usuario();
-?>
-
 <!DOCTYPE html>
 <html lang="es">
 
@@ -18,13 +13,20 @@ $user = new Usuario();
         <a href="#inicio"><img src="img/logo2.png"></a>
     </header>
     <nav>
-        <a href="#perfil">PERFIL</a>
-        <a href="#compras">COMPRAS</a>
-        <a href="#deseados">DESEADOS</a>
-        <a href="#opciones">OPCIONES</a>
+        <a href="#videojuegos">VIDEOJUEGOS</a>
+        <a href="#juegosdemesa">JUEGOS DE MESA</a>
+        <a href="#figuras">FIGURAS</a>
+        <a href="#libros">LIBROS</a>
+
+        <form action="#" method="post" id="busqueda">
+            <input type="text" id="search" placeholder="Buscar...">
+            <button type="submit">Buscar</button>
+        </form>
     </nav>
 
 
+
+  
     </body>
 
     <footer>
