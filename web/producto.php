@@ -2,6 +2,7 @@
 require_once('autoloader.php');
 $lista = new Model();
 $id = $_GET['id'];
+$ruta = $_GET['ruta'];
 ?>
 
 <!DOCTYPE html>
@@ -39,7 +40,8 @@ $id = $_GET['id'];
     
 
 
-    <section>
+    <?= $lista->showProduct($id, $ruta) ?>
+    <!--<section>
         <div class="container_info">
             <div class="portada"><img src="img/videojuegos/vid1.jpg"></div>
             <div class="titulo"><h2>ER VARDUS GATE TRES PREEEMO</h2></div>
@@ -50,7 +52,7 @@ $id = $_GET['id'];
         </div>
         <h2>DESCRIPCIÓN</h2>
         <p>Descripción de la BD</p>
-    </section>
+    </section>-->
   
 
 
