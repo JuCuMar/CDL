@@ -1,6 +1,7 @@
 <?php
 require_once('autoloader.php');
-
+$lista = new Model();
+$id = $_GET['id'];
 ?>
 
 <!DOCTYPE html>
@@ -38,13 +39,11 @@ require_once('autoloader.php');
     
     <section>
         <div class="container_info">
-            <div class="portada"><img src="img/nov3.jpg"></div>
+            <div class="portada"><img src="img/videojuegos/vid1.jpg"></div>
             <div class=""><h2>ER VARDUS GATE TRES PREEEMO</h2></div>
         </div>
         <h2>DESCRIPCIÓN</h2>
         <p>Descripción de la BD</p>
-        <h2>CARACTERISTICAS</h2>
-        <p>Huele como la abuela</p>
     </section>
   
     </body>
@@ -82,7 +81,7 @@ require_once('autoloader.php');
     </div>
     <br>
     <h6>© 2025 CRIPTA-DEL-LORE</h6>  
-</footer>
+    </footer>
 
     <script>
         const pato = document.getElementById('pato');

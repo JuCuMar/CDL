@@ -15,8 +15,9 @@ class Model extends Connection {
         if ($result->rowCount() > 0) {
             echo '<section id="section_productos">';
             while($value = $result->fetch(PDO::FETCH_ASSOC)){
+                $ruta="img/videojuegos/vid'.$log.'.jpg";
                 echo '<article class="container_producto">';
-                echo '<div class="recuadro"><a href="http://localhost:8080/PROYECTO/subir/web/producto.php?id:'.$value['id'].'"><img class="miniatura" src="img/videojuegos/vid'.$log.'.jpg"></div>';
+                echo '<div class="recuadro"><a href="http://localhost:8080/PROYECTO/subir/web/producto.php?id:'.$value['id'].'&?ruta:'.$ruta.'"><img class="miniatura" src="img/videojuegos/vid'.$log.'.jpg"></div>';
                 echo '<div class="pie_miniatura"><h3>' . $value['nombre'] . '</h3></div><div class="precio_miniatura">Precio: ' . $value['precio'] . '€</a></div>';
                 echo '</article>';
                 $log++;
@@ -38,8 +39,9 @@ class Model extends Connection {
         if ($result->rowCount() > 0) {
             echo '<section id="section_productos">';
             while($value = $result->fetch(PDO::FETCH_ASSOC)){
+                $ruta="img/juegosmesa/mes'.$log.'.jpg";
                 echo '<article class="container_producto">';
-                echo '<div class="recuadro"><a href="http://localhost:8080/PROYECTO/subir/web/producto.php?id:'.$value['id'].'"><img class="miniatura" src="img/juegosmesa/mes'.$log.'.jpg"></div>';
+                echo '<div class="recuadro"><a href="http://localhost:8080/PROYECTO/subir/web/producto.php?id:'.$value['id'].'&?ruta:'.$ruta.'"><img class="miniatura" src="img/juegosmesa/mes'.$log.'.jpg"></div>';
                 echo '<div class="pie_miniatura"><h3>' . $value['nombre'] . '</h3></div><div class="precio_miniatura">Precio: ' . $value['precio'] . '€</a></div>';
                 echo '</article>';
                 $log++;
@@ -61,8 +63,9 @@ class Model extends Connection {
         if ($result->rowCount() > 0) {
             echo '<section id="section_productos">';
             while($value = $result->fetch(PDO::FETCH_ASSOC)){
+                $ruta="img/figuras/fig'.$log.'.jpg";
                 echo '<article class="container_producto">';
-                echo '<div class="recuadro"><a href="http://localhost:8080/PROYECTO/subir/web/producto.php?id:'.$value['id'].'"><img class="miniatura" src="img/figuras/fig'.$log.'.jpg"></div>';
+                echo '<div class="recuadro"><a href="http://localhost:8080/PROYECTO/subir/web/producto.php?id:'.$value['id'].'&?ruta:'.$ruta.'"><img class="miniatura" src="img/figuras/fig'.$log.'.jpg"></div>';
                 echo '<div class="pie_miniatura"><h3>' . $value['nombre'] . '</h3></div><div class="precio_miniatura">Precio: ' . $value['precio'] . '€</a></div>';
                 echo '</article>';
                 $log++;
@@ -84,8 +87,9 @@ class Model extends Connection {
         if ($result->rowCount() > 0) {
             echo '<section id="section_productos">';
             while($value = $result->fetch(PDO::FETCH_ASSOC)){
+                $ruta="img/libros/lib'.$log.'.jpg";
                 echo '<article class="container_producto">';
-                echo '<div class="recuadro"><a href="http://localhost:8080/PROYECTO/subir/web/producto.php?id:'.$value['id'].'"><img class="miniatura" src="img/libros/lib'.$log.'.jpg"></div>';
+                echo '<div class="recuadro"><a href="http://localhost:8080/PROYECTO/subir/web/producto.php?id:'.$value['id'].'&?ruta:'.$ruta.'"><img class="miniatura" src="img/libros/lib'.$log.'.jpg"></div>';
                 echo '<div class="pie_miniatura"><h3>' . $value['nombre'] . '</h3></div><div class="precio_miniatura">Precio: ' . $value['precio'] . '€</a></div>';
                 echo '</article>';
                 $log++;
@@ -95,7 +99,43 @@ class Model extends Connection {
             echo '0 results';
         }
     }
+    public function countVideojuegos() {
+        $sql = "SELECT Count(*) FROM Videojuegos;";
+        $stmt = $this->conn ->query($sql);
+        return $stmt;
+        
 
+    }
+    public function getPaginatedProducts($limit,$offset){
+        $sql = "SELECT * FROM Videojuegos Limit $limit offset $offset;";
+        $stmt = $this->conn ->query($sql);
+        return $stmt;
+    }
+
+    public function getProduct($id, $ruta) {
+        $query = 'SELECT id, nombre, stock, precio FROM Producto WHERE id = '.$id.'';
+        return $this->getConn()->query($query);
+    }
+
+    public function showProduct($id, $ruta) {
+        $log = 1;
+        $result = $this->getProduct($id, $ruta);
+        if ($result->rowCount() > 0) {
+            echo '<section>';
+            while($value = $result->fetch(PDO::FETCH_ASSOC)){
+                echo '<div class="container_info">';
+                echo '<div class="portada"><img src="'.$ruta.'"></div>';
+                echo '<div class="">aaa</div>';
+                echo '</div>';
+                echo '<h2>DESCRIPCIÓN</h2>';
+                echo '<p>Descripción de la BD</p>';
+
+            }
+            echo '</section>';
+        } else {
+            echo '0 results';
+        }
+    }
 }
 
 ?>
