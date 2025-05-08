@@ -1,3 +1,8 @@
+<?php
+require_once('autoloader.php');
+
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -70,7 +75,18 @@
             <div class="recuadro"><a href="http://localhost:8080/PROYECTO/subir/web/producto.php"><img class="miniatura" src="img/nov3.jpg"></div>
             <div class="pie_miniatura"><h3>BALDUR'S GATE</h3>Precio: 31'99€</a></div>
         </article>
-        
+
+        <div>
+        <?php 
+        $productsPerPage = 3;                   
+        $page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
+        $offset = ($page-1) * $productsPerPage;    
+        $totalProducts = $lista->countProducts();  
+        $totalPages = ceil($totalProducts / $productsPerPage);
+
+        $products = $lista->getPaginatedProducts($productsPerPage, $offset);
+        ?>
+        </div>  
     </section>
   
     </body>
