@@ -40,7 +40,7 @@ $id = $_GET['id'];
     <section>
         <div class="container_info">
             <div class="portada"><img src="img/nov3.jpg"></div>
-            <div class="">aaa</div>
+            <div class=""><h2>ER VARDUS GATE TRES PREEEMO</h2></div>
         </div>
         <h2>DESCRIPCIÓN</h2>
         <p>Descripción de la BD</p>

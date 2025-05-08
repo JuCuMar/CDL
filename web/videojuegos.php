@@ -78,14 +78,39 @@ $lista = new Model();
         </article> -->
 
         <div>
-        <?php 
+        <?php /*
         $productsPerPage = 3;                   
         $page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
         $offset = ($page-1) * $productsPerPage;    
         $totalProducts = $lista->countProducts();  
         $totalPages = ceil($totalProducts / $productsPerPage);
 
+        $products = $lista->getPaginatedProducts($productsPerPage, $offset);*/
+
+        $productsPerPage = 9;
+        $page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
+        $totalProducts = $lista->countProducts();
+        $totalPages = $totalProducts > 0 ? ceil($totalProducts / $productsPerPage) : 1;
+        $page = max(1, min($page, $totalPages));
+        $offset = ($page - 1) * $productsPerPage;
         $products = $lista->getPaginatedProducts($productsPerPage, $offset);
+        if (!empty($products)) {
+            foreach ($products as $product) {
+                echo "<p>{$product['nombre']}</p>"; 
+            }
+        } else {
+            echo "<p>No hay productos para mostrar.</p>";
+        }
+        echo "<div style='margin-top: 20px;'>";
+        for ($i = 1; $i <= $totalPages; $i++) {
+            if ($i == $page) {
+                echo "<strong>$i</strong> ";
+            } else {
+                echo "<a href='?page=$i'>$i</a> ";
+            }
+        }
+        echo "</div>";
+        
         ?>
         </div>  
     </section>
