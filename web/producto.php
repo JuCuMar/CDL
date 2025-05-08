@@ -39,7 +39,7 @@ $id = $_GET['id'];
     
     <section>
         <div class="container_info">
-            <div class="portada"><img src="img/nov3.jpg"></div>
+            <div class="portada"><img src="img/videojuegos/vid1.jpg"></div>
             <div class=""><h2>ER VARDUS GATE TRES PREEEMO</h2></div>
         </div>
         <h2>DESCRIPCIÓN</h2>
@@ -81,7 +81,7 @@ $id = $_GET['id'];
     </div>
     <br>
     <h6>© 2025 CRIPTA-DEL-LORE</h6>  
-</footer>
+    </footer>
 
     <script>
         const pato = document.getElementById('pato');
