@@ -98,7 +98,7 @@ CREATE TABLE `Producto` (
   `nombre` VARCHAR(100),
   `stock` INT,
   `precio` FLOAT,
-  `descripcion` VARCHAR(500) null,
+  `descripcion` VARCHAR(5000) null,
   `id_categoria` INT,
   PRIMARY KEY (`id`),
   CONSTRAINT fk_producto_categoria FOREIGN KEY (id_categoria) REFERENCES Categoria(id)
