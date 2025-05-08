@@ -152,7 +152,7 @@ h1 {
 .miniatura, .miniatura_fija {
     border-radius: 15px;
     height: 215px;
-    width: 310px;
+    width: 300px;
 }
 
 .texto_noticia {
@@ -171,19 +171,41 @@ h1 {
 
 .container_producto {
     margin: 40px 100px 40px 0;
+    max-width: 360px;
 }
 
 .pie_miniatura {
-    
+    font-size: 15px;
     display:flex;
     justify-content: center;
     text-align: center;
-    padding: 10px;
+    margin: 8px 0 3px 0;
+    align-items: baseline;
+}
+
+.precio_miniatura {
+    display: flex;
+    justify-content: center;
 }
 
 .miniatura:hover {
     transform: scale(1.07);
     transition: transform 0.1s ease;
+}
+
+.container_info {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+.portada {
+    margin-right: 20px;
+}
+
+.portada img{
+    height: 350px;
+    width: 600px;
 }
 
 
