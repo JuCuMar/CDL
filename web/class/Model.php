@@ -17,7 +17,7 @@ class Model extends Connection {
             while($value = $result->fetch(PDO::FETCH_ASSOC)){
                 $ruta="img/videojuegos/vid'.$log.'.jpg";
                 echo '<article class="container_producto">';
-                echo '<div class="recuadro"><a href="http://localhost:8080/PROYECTO/subir/web/producto.php?id:'.$value['id'].'&?ruta:'.$ruta.'"><img class="miniatura" src="img/videojuegos/vid'.$log.'.jpg"></div>';
+                echo '<div class="recuadro"><a href="http://localhost:8080/PROYECTO/subir/web/producto.php?id='.$value['id'].'&?ruta='.$ruta.'"><img class="miniatura" src="img/videojuegos/vid'.$log.'.jpg"></div>';
                 echo '<div class="pie_miniatura"><h3>' . $value['nombre'] . '</h3></div><div class="precio_miniatura">Precio: ' . $value['precio'] . '€</a></div>';
                 echo '</article>';
                 $log++;
@@ -41,7 +41,7 @@ class Model extends Connection {
             while($value = $result->fetch(PDO::FETCH_ASSOC)){
                 $ruta="img/juegosmesa/mes'.$log.'.jpg";
                 echo '<article class="container_producto">';
-                echo '<div class="recuadro"><a href="http://localhost:8080/PROYECTO/subir/web/producto.php?id:'.$value['id'].'&?ruta:'.$ruta.'"><img class="miniatura" src="img/juegosmesa/mes'.$log.'.jpg"></div>';
+                echo '<div class="recuadro"><a href="http://localhost:8080/PROYECTO/subir/web/producto.php?id='.$value['id'].'&?ruta='.$ruta.'"><img class="miniatura" src="img/juegosmesa/mes'.$log.'.jpg"></div>';
                 echo '<div class="pie_miniatura"><h3>' . $value['nombre'] . '</h3></div><div class="precio_miniatura">Precio: ' . $value['precio'] . '€</a></div>';
                 echo '</article>';
                 $log++;
@@ -65,7 +65,7 @@ class Model extends Connection {
             while($value = $result->fetch(PDO::FETCH_ASSOC)){
                 $ruta="img/figuras/fig'.$log.'.jpg";
                 echo '<article class="container_producto">';
-                echo '<div class="recuadro"><a href="http://localhost:8080/PROYECTO/subir/web/producto.php?id:'.$value['id'].'&?ruta:'.$ruta.'"><img class="miniatura" src="img/figuras/fig'.$log.'.jpg"></div>';
+                echo '<div class="recuadro"><a href="http://localhost:8080/PROYECTO/subir/web/producto.php?id='.$value['id'].'&?ruta='.$ruta.'"><img class="miniatura" src="img/figuras/fig'.$log.'.jpg"></div>';
                 echo '<div class="pie_miniatura"><h3>' . $value['nombre'] . '</h3></div><div class="precio_miniatura">Precio: ' . $value['precio'] . '€</a></div>';
                 echo '</article>';
                 $log++;
@@ -89,7 +89,7 @@ class Model extends Connection {
             while($value = $result->fetch(PDO::FETCH_ASSOC)){
                 $ruta="img/libros/lib'.$log.'.jpg";
                 echo '<article class="container_producto">';
-                echo '<div class="recuadro"><a href="http://localhost:8080/PROYECTO/subir/web/producto.php?id:'.$value['id'].'&?ruta:'.$ruta.'"><img class="miniatura" src="img/libros/lib'.$log.'.jpg"></div>';
+                echo '<div class="recuadro"><a href="http://localhost:8080/PROYECTO/subir/web/producto.php?id='.$value['id'].'&?ruta:='.$ruta.'"><img class="miniatura" src="img/libros/lib'.$log.'.jpg"></div>';
                 echo '<div class="pie_miniatura"><h3>' . $value['nombre'] . '</h3></div><div class="precio_miniatura">Precio: ' . $value['precio'] . '€</a></div>';
                 echo '</article>';
                 $log++;
