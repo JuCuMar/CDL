@@ -96,7 +96,7 @@ $lista = new Model();
         $products = $lista->getPaginatedVideojuegos($productsPerPage, $offset);
         if (!empty($products)) {
             foreach ($products as $product) {
-                echo "<p>{$product['nombre']}</p>"; 
+                echo "<p>{$product['nombre']}</p>";
             }
         } else {
             echo "<p>No hay productos para mostrar.</p>";
@@ -110,7 +110,6 @@ $lista = new Model();
             }
         }
         echo "</div>";
-        
         ?>
         </div>  
     </section>
