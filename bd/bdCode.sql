@@ -97,7 +97,8 @@ CREATE TABLE `Producto` (
   `id` INT auto_increment, 
   `nombre` VARCHAR(100),
   `stock` INT,
-  `Precio` FLOAT,
+  `precio` FLOAT,
+  `descripcion` VARCHAR(500) null,
   `id_categoria` INT,
   PRIMARY KEY (`id`),
   CONSTRAINT fk_producto_categoria FOREIGN KEY (id_categoria) REFERENCES Categoria(id)
@@ -107,25 +108,26 @@ CREATE TABLE `Producto` (
 # Dumping data for table 'Producto'
 #
 
-INSERT INTO Producto (nombre, stock, precio, id_categoria) VALUES ('Baldurs Gate 3', 20, 50, 1);
-INSERT INTO Producto (nombre, stock, precio, id_categoria) VALUES ('The elder scrolls V: Skyrim', 15, 5, 1);
-INSERT INTO Producto (nombre, stock, precio, id_categoria) VALUES ('The elder scrolls IV: Oblivion Remastered', 5, 55, 1);
-INSERT INTO Producto (nombre, stock, precio, id_categoria) VALUES ('Total war Warhammer 3', 50, 30, 1);
-INSERT INTO Producto (nombre, stock, precio, id_categoria) VALUES ('Mass Effect Legendary Edition', 49, 10, 1);
-INSERT INTO Producto (nombre, stock, precio, id_categoria) VALUES ('The witcher 3: Wild Hunt', 100, 30, 1);
-INSERT INTO Producto (nombre, stock, precio, id_categoria) VALUES ('XCOM 2', 20, 50, 1);
-INSERT INTO Producto (nombre, stock, precio, id_categoria) VALUES ('Cyberpunk 2077', 59, 60, 1);
-INSERT INTO Producto (nombre, stock, precio, id_categoria) VALUES ('Satisfactory', 68, 40, 1);
+INSERT INTO Producto (nombre, stock, precio, descripcion, id_categoria) VALUES ('Baldurs Gate 3', 20, 50, 'Baldurs Gate 3 es un juego de rol (RPG) de fantasía desarrollado por Larian Studios. Es la tercera entrega principal de la aclamada serie Baldurs Gate y se basa en el sistema de reglas de la quinta edición de Dungeons & Dragons (D&D). El juego te sumerge en un mundo rico y detallado, los Reinos Olvidados, donde tus decisiones moldean la historia y determinan tu legado.
+La aventura comienza con tu personaje siendo infectado por un parásito mental de los azotamentes. En tu búsqueda por librarte de esta amenaza, te cruzarás con otros supervivientes con destinos entrelazados. Juntos, formaréis un grupo y os embarcaréis en un viaje épico lleno de compañerismo, traición, sacrificio y la tentación del poder absoluto.', 1);
+INSERT INTO Producto (nombre, stock, precio, descripcion, id_categoria) VALUES ('The elder scrolls V: Skyrim', 15, 5, 'The Elder Scrolls V: Skyrim es un juego de rol de mundo abierto desarrollado por Bethesda Game Studios. Lanzado originalmente en 2011, se ha convertido en un clásico moderno aclamado por su inmenso mundo, su libertad de exploración y su rica narrativa. Es la quinta entrega principal de la saga The Elder Scrolls. El juego te transporta a la gélida y montañosa provincia de Skyrim, situada en el norte del continente de Tamriel. La tierra está inmersa en una guerra civil entre los leales al Imperio y los rebeldes Stormcloaks, quienes buscan la independencia de Skyrim. En medio de este conflicto, una amenaza aún mayor emerge: el regreso de los dragones, criaturas legendarias que se creían extintas.', 1);
+INSERT INTO Producto (nombre, stock, precio, descripcion, id_categoria) VALUES ('The elder scrolls IV: Oblivion Remastered', 5, 55, 'Ambientado en la provincia de Cyrodiil, el juego te pone en el papel del Héroe de Kvatch. Tras el asesinato del emperador Uriel Septim VII, te ves envuelto en un conflicto con el reino Daédrico de Oblivion. Portales a esta aterradora dimensión se han abierto por todo Cyrodiil, liberando hordas de Daedra sobre la tierra. Depende de ti encontrar al heredero perdido del trono y desentrañar la siniestra trama que amenaza con destruir todo Tamriel.', 1);
+INSERT INTO Producto (nombre, stock, precio, descripcion, id_categoria) VALUES ('Total war Warhammer 3', 50, 30, 'Total War: Warhammer III es la culminación épica de la trilogía de estrategia en tiempo real y por turnos de Creative Assembly, ambientada en el vibrante y brutal mundo de Warhammer Fantasy Battles de Games Workshop. Lanzado en 2022, este título lleva la escala y la fantasía de la serie a nuevas alturas, sumergiéndote en un conflicto cataclísmico que decidirá el destino del mundo.', 1);
+INSERT INTO Producto (nombre, stock, precio, descripcion, id_categoria) VALUES ('Mass Effect Legendary Edition', 49, 10, 'La Mass Effect Legendary Edition es una remasterización completa de la aclamada trilogía original de Mass Effect, desarrollada por BioWare y publicada por Electronic Arts. Lanzada en 2021, esta edición reúne los tres juegos icónicos: Mass Effect, Mass Effect 2 y Mass Effect 3, junto con más de 40 contenidos descargables (DLC) de un jugador, incluyendo expansiones de la historia, armas y armaduras promocionales.', 1);
+INSERT INTO Producto (nombre, stock, precio, descripcion, id_categoria) VALUES ('The witcher 3: Wild Hunt', 100, 30, 'The Witcher 3: Wild Hunt es un juego de rol de acción de mundo abierto desarrollado y publicado por CD Projekt Red. Lanzado en 2015, es la tercera y última entrega de la saga de videojuegos basada en la serie de novelas de fantasía del escritor polaco Andrzej Sapkowski. Aclamado universalmente por su narrativa inmersiva, su vasto y detallado mundo, sus personajes complejos y sus decisiones impactantes, se ha convertido en un referente del género RPG.', 1);
+INSERT INTO Producto (nombre, stock, precio, descripcion, id_categoria) VALUES ('XCOM 2', 20, 50, 'XCOM 2 es la secuela del galardonado juego de estrategia XCOM: Enemy Unknown. Han pasado veinte años desde que los líderes mundiales se rindieran incondicionalmente a las fuerzas alienígenas. Ahora, los alienígenas gobiernan la Tierra y han construido brillantes ciudades que prometen un futuro espléndido para la humanidad en la superficie, mientras ocultan una agenda siniestra bajo ella.', 1);
+INSERT INTO Producto (nombre, stock, precio, descripcion, id_categoria) VALUES ('Cyberpunk 2077', 59, 60, 'Cyberpunk 2077 es un RPG de acción y aventura en mundo abierto ambientado en Night City, una megalópolis obsesionada con el poder, el glamour 1 y las modificaciones corporales. Te pones en la piel de V, un mercenario ciberpunk que busca un implante único que es la clave para la inmortalidad.', 1);
+INSERT INTO Producto (nombre, stock, precio, descripcion, id_categoria) VALUES ('Satisfactory', 68, 40, 'Satisfactory es un videojuego de construcción de fábricas en primera persona y mundo abierto, desarrollado y publicado por Coffee Stain Studios. Lanzado en acceso anticipado en 2019 y con su versión 1.0 en septiembre de 2024, el juego te desafía a automatizar la producción en un planeta alienígena extenso y lleno de recursos.', 1);
 
-INSERT INTO Producto (nombre, stock, precio, id_categoria) VALUES ('Catan', 30, 40, 2);
-INSERT INTO Producto (nombre, stock, precio, id_categoria) VALUES ('Campaña del norte de africa', 1, 400, 2);
-INSERT INTO Producto (nombre, stock, precio, id_categoria) VALUES ('Cthulhu Death May Never Die', 5, 100, 2);
-INSERT INTO Producto (nombre, stock, precio, id_categoria) VALUES ('Las mansiones de la locura', 10, 110, 2);
-INSERT INTO Producto (nombre, stock, precio, id_categoria) VALUES ('Cartas contra la humanidad', 100, 30, 2);
-INSERT INTO Producto (nombre, stock, precio, id_categoria) VALUES ('Si señor oscuro', 30, 25, 2);
-INSERT INTO Producto (nombre, stock, precio, id_categoria) VALUES ('Risk Game of Thrones', 20, 75, 2);
-INSERT INTO Producto (nombre, stock, precio, id_categoria) VALUES ('Risk Lord of the Rings', 20, 75, 2);
-INSERT INTO Producto (nombre, stock, precio, id_categoria) VALUES ('Monopoly Game of Thrones', 10, 75, 2);
+INSERT INTO Producto (nombre, stock, precio, descripcion, id_categoria) VALUES ('Catan', 30, 40, 'Catan (Los Colonos de Catán): El juego original donde los jugadores asumen el papel de colonos que llegan a una nueva isla. El objetivo es obtener puntos de victoria construyendo asentamientos, ciudades y carreteras, y desarrollando su civilización mediante la obtención e intercambio de recursos (madera, ladrillo, trigo, oveja y piedra). Es un juego de estrategia con elementos de azar y negociación.', 2);
+INSERT INTO Producto (nombre, stock, precio, descripcion, id_categoria) VALUES ('Campaña del norte de africa', 1, 400, 'Un juego de mesa sobre la Campaña del Norte de África te sumerge en los desafíos militares de este crucial frente de la Segunda Guerra Mundial, obligándote a planificar movimientos, gestionar recursos, coordinar unidades y explotar las debilidades del enemigo en el implacable entorno del desierto. La complejidad y el enfoque específico varían significativamente entre los diferentes juegos disponibles.', 2);
+INSERT INTO Producto (nombre, stock, precio, descripcion, id_categoria) VALUES ('Cthulhu Death May Never Die', 5, 100, 2);
+INSERT INTO Producto (nombre, stock, precio, descripcion, id_categoria) VALUES ('Las mansiones de la locura', 10, 110, 2);
+INSERT INTO Producto (nombre, stock, precio, descripcion, id_categoria) VALUES ('Cartas contra la humanidad', 100, 30, 2);
+INSERT INTO Producto (nombre, stock, precio, descripcion, id_categoria) VALUES ('Si señor oscuro', 30, 25, 2);
+INSERT INTO Producto (nombre, stock, precio, descripcion, id_categoria) VALUES ('Risk Game of Thrones', 20, 75, 2);
+INSERT INTO Producto (nombre, stock, precio, descripcion, id_categoria) VALUES ('Risk Lord of the Rings', 20, 75, 2);
+INSERT INTO Producto (nombre, stock, precio, descripcion, id_categoria) VALUES ('Monopoly Game of Thrones', 10, 75, 2);
 
 INSERT INTO Producto (nombre, stock, precio, id_categoria) VALUES ('Fragmento de C’Tan del Dragón de Vacío', 5, 105, 3);
 INSERT INTO Producto (nombre, stock, precio, id_categoria) VALUES ('Szarekh, el Rey Silente', 3, 135, 3);
