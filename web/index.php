@@ -9,21 +9,27 @@
 </head>
 
 <body>
+    
     <header>
-        <a href="http://localhost:8080/PROYECTO/subir/web/"><img src="img/logo2.png"></a>
+        <div id="logo">
+            <a href="http://localhost:8080/PROYECTO/subir/web/"><img src="img/logo2.png"></a>
+        </div>
+        <div id="login">
+            <a href=""><img src="img/login.png"><p>Log in</p></a>
+        </div>
     </header>
+
     <nav>
         <a href="http://localhost:8080/PROYECTO/subir/web/videojuegos.php">VIDEOJUEGOS</a>
-        <a href="#juegosdemesa">JUEGOS DE MESA</a>
-        <a href="#figuras">FIGURAS</a>
-        <a href="#libros">LIBROS</a>
+        <a href="http://localhost:8080/PROYECTO/subir/web/juegos_mesa.php">JUEGOS DE MESA</a>
+        <a href="http://localhost:8080/PROYECTO/subir/web/figuras.php">FIGURAS</a>
+        <a href="http://localhost:8080/PROYECTO/subir/web/libros.php">LIBROS</a>
 
         <form action="#" method="post" id="busqueda">
             <input type="text" id="search" placeholder="Buscar...">
             <button type="submit">Buscar</button>
         </form>
     </nav>
-
 
     <h1>NOVEDADES</h1>
     <section>
@@ -41,7 +47,6 @@
             <div class="texto_noticia"><p><h3>Larian niega un DLC de Baldur's Gate 3</h3><br>¿Por qué Baldur's Gate 3 no ha tenido DLC? Larian responde con honestidad: 'Es aburrido'. Larian descartó hacer DLC para Baldur's Gate 3 por falta de motivacion creativa; el estudio prefiere concentrarse en nuevos proyectos ambiciosos que entusisasmen a su equipo.</p></div>
         </div>
     </section>
-
 </body>
 
 <footer>
