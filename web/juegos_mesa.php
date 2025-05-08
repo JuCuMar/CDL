@@ -1,6 +1,6 @@
 <?php
-require_once('autoloader.php');
-
+require_once("autoloader.php");
+$lista = new Model();
 ?>
 
 <!DOCTYPE html>
@@ -38,7 +38,8 @@ require_once('autoloader.php');
 
     <h1>JUEGOS DE MESA</h1>
     
-    <section id="section_productos">
+    <?= $lista->showJuegosMesa() ?>
+    <!--<section id="section_productos">
         <article class="container_producto">
             <div class="recuadro"><a href="http://localhost:8080/PROYECTO/subir/web/producto.php"><img class="miniatura" src="img/nov3.jpg"></div>
             <div class="pie_miniatura"><h3>BALDUR'S GATE</h3>Precio: 31'99€</a></div>
@@ -74,7 +75,7 @@ require_once('autoloader.php');
         <article class="container_producto">
             <div class="recuadro"><a href="http://localhost:8080/PROYECTO/subir/web/producto.php"><img class="miniatura" src="img/nov3.jpg"></div>
             <div class="pie_miniatura"><h3>BALDUR'S GATE</h3>Precio: 31'99€</a></div>
-        </article>
+        </article>-->
 
         <div>
         <?php 
