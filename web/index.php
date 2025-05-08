@@ -1,3 +1,8 @@
+<?php
+require_once('autoloader.php');
+
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -46,6 +51,16 @@
             <div class="recuadro"><img class="miniatura_fija" src="img/nov3.jpg"></div>
             <div class="texto_noticia"><p><h3>Larian niega un DLC de Baldur's Gate 3</h3><br>¿Por qué Baldur's Gate 3 no ha tenido DLC? Larian responde con honestidad: 'Es aburrido'. Larian descartó hacer DLC para Baldur's Gate 3 por falta de motivacion creativa; el estudio prefiere concentrarse en nuevos proyectos ambiciosos que entusisasmen a su equipo.</p></div>
         </div>
+
+        <?php 
+        $newsPerPage = 3;                   
+        $page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
+        $offset = ($page-1) * $newsPerPage;    
+        $totalNews = $lista->countNews();  
+        $totalPages = ceil($totalNews / $newsPerPage);
+
+        $news = $lista->getPaginatedNews($newsPerPage, $offset);
+        ?>
     </section>
 </body>
 
