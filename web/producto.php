@@ -35,14 +35,11 @@ require_once('autoloader.php');
             <button type="submit">Buscar</button>
         </form>
     </nav>
-
-    <h1>PRODUCTO</h1>
     
     <section>
-        (mirar mockup)
         <div class="container_info">
-            <div class="portada"></div>
-            <div class=""></div>
+            <div class="portada"><img src="img/nov3.jpg"></div>
+            <div class="">aaa</div>
         </div>
         <h2>DESCRIPCIÓN</h2>
         <p>Descripción de la BD</p>
