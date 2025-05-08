@@ -95,6 +95,18 @@ class Model extends Connection {
             echo '0 results';
         }
     }
+    public function countVideojuegos() {
+        $sql = "SELECT Count(*) FROM Videojuegos;";
+        $stmt = $this->conn ->query($sql);
+        return $stmt;
+        
+
+    }
+    public function getPaginatedProducts($limit,$offset){
+        $sql = "SELECT * FROM Videojuegos Limit $limit offset $offset;";
+        $stmt = $this->conn ->query($sql);
+        return $stmt;
+    }
 
 }
 
