@@ -37,15 +37,24 @@ $id = $_GET['id'];
         </form>
     </nav>
     
+
+
     <section>
         <div class="container_info">
             <div class="portada"><img src="img/videojuegos/vid1.jpg"></div>
-            <div class=""><h2>ER VARDUS GATE TRES PREEEMO</h2></div>
+            <div class="titulo"><h2>ER VARDUS GATE TRES PREEEMO</h2></div>
+            <div class="botones">
+            <button type="submit" id="like" value="">
+            <button type="submit" id="comprar" value="">
+            </div>
         </div>
         <h2>DESCRIPCIÓN</h2>
         <p>Descripción de la BD</p>
     </section>
   
+
+
+
     </body>
 
     <footer>
