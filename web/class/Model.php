@@ -106,7 +106,7 @@ class Model extends Connection {
         
 
     }
-    public function getPaginatedPVideojuegos($limit,$offset){
+    public function getPaginatedVideojuegos($limit,$offset){
         $sql = "SELECT * FROM Producto WHERE id_categoria = 1 LIMIT $limit OFFSET $offset;";
         $stmt = $this->conn ->query($sql);
         return $stmt;
