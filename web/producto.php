@@ -1,6 +1,7 @@
 <?php
 require_once('autoloader.php');
-
+$lista = new Model();
+$id = $_GET['id'];
 ?>
 
 <!DOCTYPE html>
@@ -43,8 +44,6 @@ require_once('autoloader.php');
         </div>
         <h2>DESCRIPCIÓN</h2>
         <p>Descripción de la BD</p>
-        <h2>CARACTERISTICAS</h2>
-        <p>Huele como la abuela</p>
     </section>
   
     </body>
