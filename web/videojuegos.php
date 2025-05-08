@@ -2,55 +2,20 @@
 require_once("autoloader.php");
 $lista = new Model();
 
- /*
-$productsPerPage = 3;                   
-$page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
-$offset = ($page-1) * $productsPerPage;    
-$totalProducts = $lista->countVideojuegos();  
-$totalPages = ceil($totalProducts / $productsPerPage);
-
-$products = $lista->getPaginatedVideojuegos($productsPerPage, $offset);
-
-
-                // Obtener el número de página actual
-                $page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
-
-                // Calcular el índice inicial y final para la paginación
-                $startIndex = ($page - 1) * $magazinesPerPage;
-                $magazinesToShow = array_slice($magazines , $startIndex, $magazinesPerPage);
-                
-                if ($_SERVER["REQUEST_METHOD"] == 'POST'){
-                    $index = (int)($_POST["index"] ?? -1);
-                        $manager->deleteMagazine($index);
-                        header("Location: ".$_SERVER['PHP_SELF']);
-                    }
-
-
-*/
-
-$productsPerPage = 9;
+/*$productsPerPage = 9;
 $page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
 $totalProducts = $lista->countVideojuegos();
 $totalPages = $totalProducts > 0 ? ceil($totalProducts / $productsPerPage) : 1;
 $page = max(1, min($page, $totalPages));
 $offset = ($page - 1) * $productsPerPage;
 $products = $lista->getPaginatedVideojuegos($productsPerPage, $offset);
-if (!empty($products)) {
-    foreach ($products as $product) {
-        echo "<p>{$product['nombre']}</p>";
-    }
-} else {
-    echo "<p>No hay productos para mostrar.</p>";
-}
-echo "<div style='margin-top: 20px;'>";
-for ($i = 1; $i <= $totalPages; $i++) {
-    if ($i == $page) {
-        echo "<strong>$i</strong> ";
-    } else {
-        echo "<a href='?page=$i'>$i</a> ";
-    }
-}
-echo "</div>";
+
+// Obtener el número de página actual
+$page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
+
+// Calcular el índice inicial y final para la paginación
+$startIndex = ($page - 1) * $productsPerPage;
+$productsToShow = array_slice($products , $startIndex, $productsPerPage);*/
 ?>
 
 
@@ -90,45 +55,9 @@ echo "</div>";
     <h1>VIDEOJUEGOS</h1>
     
     <?= $lista->showVideojuegos() ?>
-    <!-- <section id="section_productos">
-        <article class="container_producto">
-            <div class="recuadro"><a href="http://localhost:8080/PROYECTO/subir/web/producto.php"><img class="miniatura" src="img/nov3.jpg"></div>
-            <div class="pie_miniatura"><h3>BALDUR'S GATE</h3>Precio: 31'99€</a></div>
-        </article>
-        <article class="container_producto">
-            <div class="recuadro"><a href="http://localhost:8080/PROYECTO/subir/web/producto.php"><img class="miniatura" src="img/nov3.jpg"></div>
-            <div class="pie_miniatura"><h3>BALDUR'S GATE</h3>Precio: 31'99€</a></div>
-        </article>
-        <article class="container_producto">
-            <div class="recuadro"><a href="http://localhost:8080/PROYECTO/subir/web/producto.php"><img class="miniatura" src="img/nov3.jpg"></div>
-            <div class="pie_miniatura"><h3>BALDUR'S GATE</h3>Precio: 31'99€</a></div>
-        </article>
-        <article class="container_producto">
-            <div class="recuadro"><a href="http://localhost:8080/PROYECTO/subir/web/producto.php"><img class="miniatura" src="img/nov3.jpg"></div>
-            <div class="pie_miniatura"><h3>BALDUR'S GATE</h3>Precio: 31'99€</a></div>
-        </article>
-        <article class="container_producto">
-            <div class="recuadro"><a href="http://localhost:8080/PROYECTO/subir/web/producto.php"><img class="miniatura" src="img/nov3.jpg"></div>
-            <div class="pie_miniatura"><h3>BALDUR'S GATE</h3>Precio: 31'99€</a></div>
-        </article>
-        <article class="container_producto">
-            <div class="recuadro"><a href="http://localhost:8080/PROYECTO/subir/web/producto.php"><img class="miniatura" src="img/nov3.jpg"></div>
-            <div class="pie_miniatura"><h3>BALDUR'S GATE</h3>Precio: 31'99€</a></div>
-        </article>
-        <article class="container_producto">
-            <div class="recuadro"><a href="http://localhost:8080/PROYECTO/subir/web/producto.php"><img class="miniatura" src="img/nov3.jpg"></div>
-            <div class="pie_miniatura"><h3>BALDUR'S GATE</h3>Precio: 31'99€</a></div>
-        </article>
-        <article class="container_producto">
-            <div class="recuadro"><a href="http://localhost:8080/PROYECTO/subir/web/producto.php"><img class="miniatura" src="img/nov3.jpg"></div>
-            <div class="pie_miniatura"><h3>BALDUR'S GATE</h3>Precio: 31'99€</a></div>
-        </article>
-        <article class="container_producto">
-            <div class="recuadro"><a href="http://localhost:8080/PROYECTO/subir/web/producto.php"><img class="miniatura" src="img/nov3.jpg"></div>
-            <div class="pie_miniatura"><h3>BALDUR'S GATE</h3>Precio: 31'99€</a></div>
-        </article> -->
-
-       
+    
+        <!--
+        
         <div class="paginacion">
         <?php if ($page > 1): ?>
             <a href="?page=1"><< &nbsp</a>
@@ -138,9 +67,9 @@ echo "</div>";
         <?php if ($page < $totalPages): ?>
             <a href="?page=<?php echo $page + 1; ?>">&nbsp> &nbsp</a>
             <a href="?page=<?php echo $totalPages; ?>">>></a>
-        <?php endif; ?>
-              
-    </section>
+        <?php endif; ?> 
+        
+        -->
   
     </body>
 

@@ -1,6 +1,22 @@
 <?php
 require_once("autoloader.php");
 $lista = new Model();
+
+/*$productsPerPage = 9;
+$page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
+$totalProducts = $lista->countVideojuegos();
+$totalPages = $totalProducts > 0 ? ceil($totalProducts / $productsPerPage) : 1;
+$page = max(1, min($page, $totalPages));
+$offset = ($page - 1) * $productsPerPage;
+$products = $lista->getPaginatedVideojuegos($productsPerPage, $offset);
+
+// Obtener el número de página actual
+$page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
+
+// Calcular el índice inicial y final para la paginación
+$startIndex = ($page - 1) * $productsPerPage;
+$productsToShow = array_slice($products , $startIndex, $productsPerPage);*/
+
 ?>
 
 <!DOCTYPE html>
@@ -39,56 +55,6 @@ $lista = new Model();
     <h1>FIGURAS</h1>
     
     <?= $lista->showFiguras() ?>
-    <!--<section id="section_productos">
-        <article class="container_producto">
-            <div class="recuadro"><a href="http://localhost:8080/PROYECTO/subir/web/producto.php"><img class="miniatura" src="img/nov2.jpg"></div>
-            <div class="pie_miniatura"><h3>CABALLERO IMPERIAL</h3>Precio: 49'99€</a></div>
-        </article>
-        <article class="container_producto">
-            <div class="recuadro"><a href="http://localhost:8080/PROYECTO/subir/web/producto.php"><img class="miniatura" src="img/nov2.jpg"></div>
-            <div class="pie_miniatura"><h3>CABALLERO IMPERIAL</h3>Precio: 49'99€</a></div>
-        </article>
-        <article class="container_producto">
-            <div class="recuadro"><a href="http://localhost:8080/PROYECTO/subir/web/producto.php"><img class="miniatura" src="img/nov2.jpg"></div>
-            <div class="pie_miniatura"><h3>CABALLERO IMPERIAL</h3>Precio: 49'99€</a></div>
-        </article>
-        <article class="container_producto">
-            <div class="recuadro"><a href="http://localhost:8080/PROYECTO/subir/web/producto.php"><img class="miniatura" src="img/nov2.jpg"></div>
-            <div class="pie_miniatura"><h3>CABALLERO IMPERIAL</h3>Precio: 49'99€</a></div>
-        </article>
-        <article class="container_producto">
-            <div class="recuadro"><a href="http://localhost:8080/PROYECTO/subir/web/producto.php"><img class="miniatura" src="img/nov2.jpg"></div>
-            <div class="pie_miniatura"><h3>CABALLERO IMPERIAL</h3>Precio: 49'99€</a></div>
-        </article>
-        <article class="container_producto">
-            <div class="recuadro"><a href="http://localhost:8080/PROYECTO/subir/web/producto.php"><img class="miniatura" src="img/nov2.jpg"></div>
-            <div class="pie_miniatura"><h3>CABALLERO IMPERIAL</h3>Precio: 49'99€</a></div>
-        </article>
-        <article class="container_producto">
-            <div class="recuadro"><a href="http://localhost:8080/PROYECTO/subir/web/producto.php"><img class="miniatura" src="img/nov2.jpg"></div>
-            <div class="pie_miniatura"><h3>CABALLERO IMPERIAL</h3>Precio: 49'99€</a></div>
-        </article>
-        <article class="container_producto">
-            <div class="recuadro"><a href="http://localhost:8080/PROYECTO/subir/web/producto.php"><img class="miniatura" src="img/nov2.jpg"></div>
-            <div class="pie_miniatura"><h3>CABALLERO IMPERIAL</h3>Precio: 49'99€</a></div>
-        </article>
-        <article class="container_producto">
-            <div class="recuadro"><a href="http://localhost:8080/PROYECTO/subir/web/producto.php"><img class="miniatura" src="img/nov2.jpg"></div>
-            <div class="pie_miniatura"><h3>CABALLERO IMPERIAL</h3>Precio: 49'99€</a></div>
-        </article>-->
-
-        <div>
-        <?php 
-        $productsPerPage = 3;                   
-        $page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
-        $offset = ($page-1) * $productsPerPage;    
-        $totalProducts = $lista->countProducts();  
-        $totalPages = ceil($totalProducts / $productsPerPage);
-
-        $products = $lista->getPaginatedProducts($productsPerPage, $offset);
-        ?>
-        </div>
-    </section>
   
     </body>
 
