@@ -33,44 +33,43 @@
 
     <h1>FIGURAS</h1>
     
-    <section id="section_videojuegos">
-        <div class="container_videojuegos">
-            <div class="recuadro"><a href=""><img class="miniatura" src="img/nov3.jpg"></div>
-            <div class="pie_miniatura"><h3>BALDUR'S GATE</h3>Precio: 31'99€</a></div>
-        </div>
-        <div class="container_videojuegos">
-            <div class="recuadro"><a href=""><img class="miniatura" src="img/nov3.jpg"></div>
-            <div class="pie_miniatura"><h3>BALDUR'S GATE</h3>Precio: 31'99€</a></div>
-        </div>
-        <div class="container_videojuegos">
-            <div class="recuadro"><a href=""><img class="miniatura" src="img/nov3.jpg"></div>
-            <div class="pie_miniatura"><h3>BALDUR'S GATE</h3>Precio: 31'99€</a></div>
-        </div>
-        <div class="container_videojuegos">
-            <div class="recuadro"><a href=""><img class="miniatura" src="img/nov3.jpg"></div>
-            <div class="pie_miniatura"><h3>BALDUR'S GATE</h3>Precio: 31'99€</a></div>
-        </div>
-        <div class="container_videojuegos">
-            <div class="recuadro"><a href=""><img class="miniatura" src="img/nov3.jpg"></div>
-            <div class="pie_miniatura"><h3>BALDUR'S GATE</h3>Precio: 31'99€</a></div>
-        </div>
-        <div class="container_videojuegos">
-            <div class="recuadro"><a href=""><img class="miniatura" src="img/nov3.jpg"></div>
-            <div class="pie_miniatura"><h3>BALDUR'S GATE</h3>Precio: 31'99€</a></div>
-        </div>
-        <div class="container_videojuegos">
-            <div class="recuadro"><a href=""><img class="miniatura" src="img/nov3.jpg"></div>
-            <div class="pie_miniatura"><h3>BALDUR'S GATE</h3>Precio: 31'99€</a></div>
-        </div>
-        <div class="container_videojuegos">
-            <div class="recuadro"><a href=""><img class="miniatura" src="img/nov3.jpg"></div>
-            <div class="pie_miniatura"><h3>BALDUR'S GATE</h3>Precio: 31'99€</a></div>
-        </div>
-        <div class="container_videojuegos">
-            <div class="recuadro"><a href=""><img class="miniatura" src="img/nov3.jpg"></div>
-            <div class="pie_miniatura"><h3>BALDUR'S GATE</h3>Precio: 31'99€</a></div>
-        </div>
-        
+    <section id="section_productos">
+        <article class="container_producto">
+            <div class="recuadro"><a href="http://localhost:8080/PROYECTO/subir/web/producto.php"><img class="miniatura" src="img/nov2.jpg"></div>
+            <div class="pie_miniatura"><h3>CABALLERO IMPERIAL</h3>Precio: 49'99€</a></div>
+        </article>
+        <article class="container_producto">
+            <div class="recuadro"><a href="http://localhost:8080/PROYECTO/subir/web/producto.php"><img class="miniatura" src="img/nov2.jpg"></div>
+            <div class="pie_miniatura"><h3>CABALLERO IMPERIAL</h3>Precio: 49'99€</a></div>
+        </article>
+        <article class="container_producto">
+            <div class="recuadro"><a href="http://localhost:8080/PROYECTO/subir/web/producto.php"><img class="miniatura" src="img/nov2.jpg"></div>
+            <div class="pie_miniatura"><h3>CABALLERO IMPERIAL</h3>Precio: 49'99€</a></div>
+        </article>
+        <article class="container_producto">
+            <div class="recuadro"><a href="http://localhost:8080/PROYECTO/subir/web/producto.php"><img class="miniatura" src="img/nov2.jpg"></div>
+            <div class="pie_miniatura"><h3>CABALLERO IMPERIAL</h3>Precio: 49'99€</a></div>
+        </article>
+        <article class="container_producto">
+            <div class="recuadro"><a href="http://localhost:8080/PROYECTO/subir/web/producto.php"><img class="miniatura" src="img/nov2.jpg"></div>
+            <div class="pie_miniatura"><h3>CABALLERO IMPERIAL</h3>Precio: 49'99€</a></div>
+        </article>
+        <article class="container_producto">
+            <div class="recuadro"><a href="http://localhost:8080/PROYECTO/subir/web/producto.php"><img class="miniatura" src="img/nov2.jpg"></div>
+            <div class="pie_miniatura"><h3>CABALLERO IMPERIAL</h3>Precio: 49'99€</a></div>
+        </article>
+        <article class="container_producto">
+            <div class="recuadro"><a href="http://localhost:8080/PROYECTO/subir/web/producto.php"><img class="miniatura" src="img/nov2.jpg"></div>
+            <div class="pie_miniatura"><h3>CABALLERO IMPERIAL</h3>Precio: 49'99€</a></div>
+        </article>
+        <article class="container_producto">
+            <div class="recuadro"><a href="http://localhost:8080/PROYECTO/subir/web/producto.php"><img class="miniatura" src="img/nov2.jpg"></div>
+            <div class="pie_miniatura"><h3>CABALLERO IMPERIAL</h3>Precio: 49'99€</a></div>
+        </article>
+        <article class="container_producto">
+            <div class="recuadro"><a href="http://localhost:8080/PROYECTO/subir/web/producto.php"><img class="miniatura" src="img/nov2.jpg"></div>
+            <div class="pie_miniatura"><h3>CABALLERO IMPERIAL</h3>Precio: 49'99€</a></div>
+        </article>
     </section>
   
     </body>
