@@ -100,14 +100,14 @@ class Model extends Connection {
         }
     }
     public function countVideojuegos() {
-        $sql = "SELECT Count(*) FROM Videojuegos;";
+        $sql = "SELECT COUNT(*) FROM Producto WHERE id_categoria = 1";
         $stmt = $this->conn ->query($sql);
         return $stmt;
         
 
     }
-    public function getPaginatedProducts($limit,$offset){
-        $sql = "SELECT * FROM Videojuegos Limit $limit offset $offset;";
+    public function getPaginatedPVideojuegos($limit,$offset){
+        $sql = "SELECT * FROM Producto WHERE id_categoria = 1 LIMIT $limit OFFSET $offset;";
         $stmt = $this->conn ->query($sql);
         return $stmt;
     }
@@ -123,12 +123,12 @@ class Model extends Connection {
         if ($result->rowCount() > 0) {
             echo '<section>';
             while($value = $result->fetch(PDO::FETCH_ASSOC)){
-                echo '<div class="container_info">'
-                echo '<div class="portada"><img src="'.$ruta.'"></div>'
-                echo '<div class="">aaa</div>'
-                echo '</div>'
-                echo '<h2>DESCRIPCIÓN</h2>'
-                echo '<p>Descripción de la BD</p>'
+                echo '<div class="container_info">';
+                echo '<div class="portada"><img src="'.$ruta.'"></div>';
+                echo '<div class="">aaa</div>';
+                echo '</div>';
+                echo '<h2>DESCRIPCIÓN</h2>';
+                echo '<p>Descripción de la BD</p>';
 
             }
             echo '</section>';
