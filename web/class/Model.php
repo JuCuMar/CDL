@@ -123,12 +123,12 @@ class Model extends Connection {
         if ($result->rowCount() > 0) {
             echo '<section>';
             while($value = $result->fetch(PDO::FETCH_ASSOC)){
-                echo '<div class="container_info">'
-                echo '<div class="portada"><img src="'.$ruta.'"></div>'
-                echo '<div class="">aaa</div>'
-                echo '</div>'
-                echo '<h2>DESCRIPCIÓN</h2>'
-                echo '<p>Descripción de la BD</p>'
+                echo '<div class="container_info">';
+                echo '<div class="portada"><img src="'.$ruta.'"></div>';
+                echo '<div class="">aaa</div>';
+                echo '</div>';
+                echo '<h2>DESCRIPCIÓN</h2>';
+                echo '<p>Descripción de la BD</p>';
 
             }
             echo '</section>';
