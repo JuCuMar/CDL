@@ -38,7 +38,8 @@ require_once('autoloader.php');
 
     <h1>FIGURAS</h1>
     
-    <section id="section_productos">
+    <?= $lista->showFiguras() ?>
+    <!--<section id="section_productos">
         <article class="container_producto">
             <div class="recuadro"><a href="http://localhost:8080/PROYECTO/subir/web/producto.php"><img class="miniatura" src="img/nov2.jpg"></div>
             <div class="pie_miniatura"><h3>CABALLERO IMPERIAL</h3>Precio: 49'99€</a></div>
@@ -74,7 +75,7 @@ require_once('autoloader.php');
         <article class="container_producto">
             <div class="recuadro"><a href="http://localhost:8080/PROYECTO/subir/web/producto.php"><img class="miniatura" src="img/nov2.jpg"></div>
             <div class="pie_miniatura"><h3>CABALLERO IMPERIAL</h3>Precio: 49'99€</a></div>
-        </article>
+        </article>-->
 
         <div>
         <?php 
