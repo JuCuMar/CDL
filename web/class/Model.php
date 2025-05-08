@@ -113,7 +113,7 @@ class Model extends Connection {
     }
 
     public function getProduct($id, $ruta) {
-        $query = 'SELECT id, nombre, stock, precio FROM Producto WHERE id = '.$id.'';
+        $query = 'SELECT id, nombre, stock, precio, descripcion FROM Producto WHERE id = '.$id.'';
         return $this->getConn()->query($query);
     }
 
@@ -128,7 +128,7 @@ class Model extends Connection {
                 echo '<div class="">aaa</div>';
                 echo '</div>';
                 echo '<h2>DESCRIPCIÓN</h2>';
-                echo '<p>Descripción de la BD</p>';
+                echo '<p>'.$value['descripcion'].'</p>';
 
             }
             echo '</section>';
