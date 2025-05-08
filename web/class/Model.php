@@ -113,8 +113,8 @@ class Model extends Connection {
     }
 
     public function getProduct($id, $ruta) {
-        $query = 'SELECT id, nombre, stock, precio, descripcion FROM Producto WHERE id = '.$id.'';
-        return $this->getConn()->query($query);
+        $sql = 'SELECT id, nombre, stock, precio, descripcion FROM Producto WHERE id = '.$id.'';
+        return $this->getConn()->query($sql);
     }
 
     public function showProduct($id, $ruta) {

@@ -40,19 +40,28 @@ $ruta = $_GET['ruta'];
     
 
 
-    <?= $lista->showProduct($id, $ruta) ?>
-    <!--<section>
+    <?php /*$lista->showProduct($id, $ruta) */?>
+    <section>
         <div class="container_info">
             <div class="portada"><img src="img/videojuegos/vid1.jpg"></div>
-            <div class="titulo"><h2>ER VARDUS GATE TRES PREEEMO</h2></div>
-            <div class="botones">
-            <button type="submit" id="like" value="">
-            <button type="submit" id="comprar" value="">
+
+            <div class="container_compras">
+                <div class="titulo"><h2>The elder scrolls IV: Oblivion Remastered</h2></div>
+                <div class="precio">Precio: 31'99€</div>
+                <div class="stock">Stock disponible: 50 ud.</div>
+                <div class="botones">
+                <button type="submit" id="like"></button>
+                <button type="submit" id="comprar">Comprar</button>
+                </div>
             </div>
         </div>
-        <h2>DESCRIPCIÓN</h2>
-        <p>Descripción de la BD</p>
-    </section>-->
+
+        <div class="descripcion">
+            <h2>DESCRIPCIÓN</h2>
+            <p>Descripción de la BD</p>
+        </div>
+
+    </section>
   
 
 
