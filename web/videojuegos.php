@@ -1,7 +1,58 @@
 <?php
 require_once("autoloader.php");
 $lista = new Model();
+
+ /*
+$productsPerPage = 3;                   
+$page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
+$offset = ($page-1) * $productsPerPage;    
+$totalProducts = $lista->countVideojuegos();  
+$totalPages = ceil($totalProducts / $productsPerPage);
+
+$products = $lista->getPaginatedVideojuegos($productsPerPage, $offset);
+
+
+                // Obtener el número de página actual
+                $page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
+
+                // Calcular el índice inicial y final para la paginación
+                $startIndex = ($page - 1) * $magazinesPerPage;
+                $magazinesToShow = array_slice($magazines , $startIndex, $magazinesPerPage);
+                
+                if ($_SERVER["REQUEST_METHOD"] == 'POST'){
+                    $index = (int)($_POST["index"] ?? -1);
+                        $manager->deleteMagazine($index);
+                        header("Location: ".$_SERVER['PHP_SELF']);
+                    }
+
+
+*/
+
+$productsPerPage = 9;
+$page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
+$totalProducts = $lista->countVideojuegos();
+$totalPages = $totalProducts > 0 ? ceil($totalProducts / $productsPerPage) : 1;
+$page = max(1, min($page, $totalPages));
+$offset = ($page - 1) * $productsPerPage;
+$products = $lista->getPaginatedVideojuegos($productsPerPage, $offset);
+if (!empty($products)) {
+    foreach ($products as $product) {
+        echo "<p>{$product['nombre']}</p>";
+    }
+} else {
+    echo "<p>No hay productos para mostrar.</p>";
+}
+echo "<div style='margin-top: 20px;'>";
+for ($i = 1; $i <= $totalPages; $i++) {
+    if ($i == $page) {
+        echo "<strong>$i</strong> ";
+    } else {
+        echo "<a href='?page=$i'>$i</a> ";
+    }
+}
+echo "</div>";
 ?>
+
 
 <!DOCTYPE html>
 <html lang="es">
@@ -77,41 +128,18 @@ $lista = new Model();
             <div class="pie_miniatura"><h3>BALDUR'S GATE</h3>Precio: 31'99€</a></div>
         </article> -->
 
-        <div>
-        <?php /*
-        $productsPerPage = 3;                   
-        $page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
-        $offset = ($page-1) * $productsPerPage;    
-        $totalProducts = $lista->countProducts();  
-        $totalPages = ceil($totalProducts / $productsPerPage);
-
-        $products = $lista->getPaginatedProducts($productsPerPage, $offset);*/
-
-        $productsPerPage = 9;
-        $page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
-        $totalProducts = $lista->countVideojuegos();
-        $totalPages = $totalProducts > 0 ? ceil($totalProducts / $productsPerPage) : 1;
-        $page = max(1, min($page, $totalPages));
-        $offset = ($page - 1) * $productsPerPage;
-        $products = $lista->getPaginatedVideojuegos($productsPerPage, $offset);
-        if (!empty($products)) {
-            foreach ($products as $product) {
-                echo "<p>{$product['nombre']}</p>";
-            }
-        } else {
-            echo "<p>No hay productos para mostrar.</p>";
-        }
-        echo "<div style='margin-top: 20px;'>";
-        for ($i = 1; $i <= $totalPages; $i++) {
-            if ($i == $page) {
-                echo "<strong>$i</strong> ";
-            } else {
-                echo "<a href='?page=$i'>$i</a> ";
-            }
-        }
-        echo "</div>";
-        ?>
-        </div>  
+       
+        <div class="paginacion">
+        <?php if ($page > 1): ?>
+            <a href="?page=1"><< &nbsp</a>
+            <a href="?page=<?php echo $page - 1; ?>"><&nbsp</a>
+        <?php endif; ?>
+        <span>Página <?php echo $page; ?> de <?php echo $totalPages; ?></span>
+        <?php if ($page < $totalPages): ?>
+            <a href="?page=<?php echo $page + 1; ?>">&nbsp> &nbsp</a>
+            <a href="?page=<?php echo $totalPages; ?>">>></a>
+        <?php endif; ?>
+              
     </section>
   
     </body>
