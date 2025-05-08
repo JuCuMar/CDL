@@ -1,18 +1,6 @@
 <?php
 require_once("autoloader.php");
 $lista = new Model();
-//$lista->init("tareas.json");
-
-//Paginador
-$tasksPerPage = 10;
-$page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
-$offset = ($page-1) * $tasksPerPage;
-$totalTasks = $lista->countTasks();
-$totalPages = ceil($totalTasks / $tasksPerPage);
-// Obtener productos paginados
-$tasks = $lista->getPaginatedTasks($tasksPerPage, $offset);
-
-
 ?>
 
 <!DOCTYPE html>
