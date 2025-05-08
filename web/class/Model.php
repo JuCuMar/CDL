@@ -99,17 +99,17 @@ class Model extends Connection {
             echo '0 results';
         }
     }
-    public function countProducts() {
-        $sql = "SELECT COUNT(*) as total FROM Producto;";
-        $stmt = $this->conn->query($sql);
-        $result = $stmt->fetch(PDO::FETCH_ASSOC);
-        return $result['total'];
+    public function countVideojuegos() {
+        $sql = "SELECT COUNT(*) FROM Producto WHERE id_categoria = 1";
+        $stmt = $this->conn ->query($sql);
+        return $stmt;
+        
+
     }
-    
-    public function getPaginatedProducts($limit, $offset) {
-        $sql = "SELECT * FROM Producto LIMIT $limit OFFSET $offset;";
-        $stmt = $this->conn->query($sql);
-        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    public function getPaginatedPVideojuegos($limit,$offset){
+        $sql = "SELECT * FROM Producto WHERE id_categoria = 1 LIMIT $limit OFFSET $offset;";
+        $stmt = $this->conn ->query($sql);
+        return $stmt;
     }
 
     public function getProduct($id, $ruta) {

@@ -89,11 +89,11 @@ $lista = new Model();
 
         $productsPerPage = 9;
         $page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
-        $totalProducts = $lista->countProducts();
+        $totalProducts = $lista->countVideojuegos();
         $totalPages = $totalProducts > 0 ? ceil($totalProducts / $productsPerPage) : 1;
         $page = max(1, min($page, $totalPages));
         $offset = ($page - 1) * $productsPerPage;
-        $products = $lista->getPaginatedProducts($productsPerPage, $offset);
+        $products = $lista->getPaginatedVideojuegos($productsPerPage, $offset);
         if (!empty($products)) {
             foreach ($products as $product) {
                 echo "<p>{$product['nombre']}</p>";
