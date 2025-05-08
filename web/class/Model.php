@@ -85,7 +85,7 @@ class Model extends Connection {
             echo '<section id="section_productos">';
             while($value = $result->fetch(PDO::FETCH_ASSOC)){
                 echo '<article class="container_producto">';
-                echo '<div class="recuadro"><a href="http://localhost:8080/PROYECTO/subir/web/producto.php?id:'.$value['id'].'"><img class="miniatura" src="img/figuras/lib'.$log.'.jpg"></div>';
+                echo '<div class="recuadro"><a href="http://localhost:8080/PROYECTO/subir/web/producto.php?id:'.$value['id'].'"><img class="miniatura" src="img/libros/lib'.$log.'.jpg"></div>';
                 echo '<div class="pie_miniatura"><h3>' . $value['nombre'] . '</h3></div><div class="precio_miniatura">Precio: ' . $value['precio'] . '€</a></div>';
                 echo '</article>';
                 $log++;
