@@ -1,5 +1,17 @@
 <?php
-require_once('autoloader.php');
+require_once("autoloader.php");
+$lista = new Model();
+//$lista->init("tareas.json");
+
+//Paginador
+$tasksPerPage = 10;
+$page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
+$offset = ($page-1) * $tasksPerPage;
+$totalTasks = $lista->countTasks();
+$totalPages = ceil($totalTasks / $tasksPerPage);
+// Obtener productos paginados
+$tasks = $lista->getPaginatedTasks($tasksPerPage, $offset);
+
 
 ?>
 
@@ -38,7 +50,8 @@ require_once('autoloader.php');
 
     <h1>VIDEOJUEGOS</h1>
     
-    <section id="section_productos">
+    <?= $lista->showVideojuegos() ?>
+    <!-- <section id="section_productos">
         <article class="container_producto">
             <div class="recuadro"><a href="http://localhost:8080/PROYECTO/subir/web/producto.php"><img class="miniatura" src="img/nov3.jpg"></div>
             <div class="pie_miniatura"><h3>BALDUR'S GATE</h3>Precio: 31'99€</a></div>
@@ -74,7 +87,7 @@ require_once('autoloader.php');
         <article class="container_producto">
             <div class="recuadro"><a href="http://localhost:8080/PROYECTO/subir/web/producto.php"><img class="miniatura" src="img/nov3.jpg"></div>
             <div class="pie_miniatura"><h3>BALDUR'S GATE</h3>Precio: 31'99€</a></div>
-        </article>
+        </article> -->
 
         <div>
         <?php 
