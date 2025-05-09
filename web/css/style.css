@@ -414,9 +414,10 @@ footer h6 {
 .botones_registro {
     display: flex;
     justify-content: space-evenly;
+    color: #f5f5f5;
 }
 
-.boton_inicio, .envia_registro {
+.inicio, .envia_registro {
     background-color: rgb(61, 163, 61);
     border: 2px solid #004443;
     border-radius: 5px;
@@ -428,9 +429,10 @@ footer h6 {
     
 }
 
-.boton_inicio a, .boton_registro a {
+.inicio, .boton_registro a {
     text-decoration: none;
     color: #f5f5f5;
+
 }
 
 

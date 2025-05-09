@@ -24,21 +24,24 @@ if (count($_POST) > 0) {
             <div class="registro">
             <form action="" method="post">
                 <label for="nombre">Nombre:</label><br>
-                <input name="nombre" type="text" id="nombre" style="width: 250px;"><br><br>
+                <input name="nombre" type="text" id="nombre" style="width: 250px;" required><br><br>
                 <label for="apellidos">Apellidos:</label><br>
-                <input name="apellidos" type="text" id="apellidos" style="width: 250px;"><br><br>
+                <input name="apellidos" type="text" id="apellidos" style="width: 250px;" required><br><br>
                 <label for="alias">Apodo:</label><br>
-                <input name="alias" type="text" id="apodo" style="width: 250px;"><br><br>
+                <input name="alias" type="text" id="apodo" style="width: 250px;" required><br><br>
                 <label for="fecha_nac">Fecha de nacimiento:</label><br>
-                <input name="fecha_nac" type="date" id="nac_registro" style="width: 250px;"><br><br>
+                <input name="fecha_nac" type="date" id="nac_registro" style="width: 250px;" required><br><br>
                 <label for="email">Correo:</label><br>
-                <input name="email" type="email" id="email" style="width: 250px;"><br><br>
+                <input name="email" type="email" id="email" style="width: 250px;" required><br><br>
                 <label for="contraseña">Password:</label><br>
-                <input name="contraseña" type="password" id="password" style="width: 250px;"><br><br>
+                <input name="contraseña" type="password" id="password" style="width: 250px;" required><br><br>
                 <div class="botones_registro">
+                    
+                <a class="inicio" href='http://localhost:8080/PROYECTO/subir/web/'>
                     <div class="boton_inicio">
-                        <a class="inicio" href='http://localhost:8080/PROYECTO/subir/web/'>Inicio</a>
+                        Inicio
                     </div>
+                </a>
                     <div class="boton_registro">
                         <button class="envia_registro" href="" type="submit" name="submit">Enviar</button>
                     </div>
