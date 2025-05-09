@@ -20,7 +20,7 @@ require_once('autoloader.php');
             <a href="http://localhost:8080/PROYECTO/subir/web/"><img src="img/logo2.png"></a>
         </div>
         <div id="login">
-            <a href=""><img src="img/login.png"><p>Log in</p></a>
+            <a href=""><img src="img/login.png"><p>Sing in</p></a>
         </div>
     </header>
 
