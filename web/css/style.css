@@ -395,7 +395,7 @@ footer h6 {
 .marco_registro{
     border: 3px solid #336665;
     display: flex;
-    padding: 8px;
+    padding: 9px 10px 6px 12px;
 }
 
 .registro {
