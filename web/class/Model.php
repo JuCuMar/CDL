@@ -121,15 +121,25 @@ class Model extends Connection {
         $log = 1;
         $result = $this->getProduct($id, $ruta);
         if ($result->rowCount() > 0) {
-            echo '<section>';
+            echo '<section id="section_descripcion">';
             while($value = $result->fetch(PDO::FETCH_ASSOC)){
                 echo '<div class="container_info">';
                 echo '<div class="portada"><img src="'.$ruta.'"></div>';
-                echo '<div class="">aaa</div>';
+                echo '<div class="container_compras">';
+                echo '<div class="titulo"><h2>'.$value['nombre'].'</h2></div>';
+                echo '<div class="precio">Precio: '.$value['precio'].'€</div>';
+                echo '<div class="stock">Stock disponible: '.$value['stock'].' ud.</div>';
+                echo '<div class="botones">';
+                echo '<button type="submit" id="like"><img src="img/like.png"></button>';
+                echo '<a href="">';
+                echo '</a>';
                 echo '</div>';
+                echo '</div>';
+                echo '</div>';
+                echo '<div class="descripcion">';
                 echo '<h2>DESCRIPCIÓN</h2>';
                 echo '<p>'.$value['descripcion'].'</p>';
-
+                echo '</div>';
             }
             echo '</section>';
         } else {
