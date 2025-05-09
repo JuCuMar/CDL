@@ -22,7 +22,7 @@ $ruta = $_GET['ruta'];
             <a href="http://localhost:8080/PROYECTO/subir/web/"><img src="img/logo2.png"></a>
         </div>
         <div id="login">
-            <a href=""><img src="img/login.png"><p>Sing in</p></a>
+            <a href="http://localhost:8080/PROYECTO/subir/web/registro.php"><img src="img/login.png"><p>Sing in</p></a>
         </div>
     </header>
 
