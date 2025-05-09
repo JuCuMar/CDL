@@ -24,23 +24,23 @@ if (count($_POST) > 0) {
             <div class="registro">
             <form action="" method='POST'>
                 <label>Nombre:</label><br>
-                <input type="text" id="nombre" style="width: 250px;"><br><br>
+                <input type="text" id="nombre" style="width: 250px;" required><br><br>
                 <label>Apellidos:</label><br>
-                <input type="text" id="apellidos" style="width: 250px;"><br><br>
+                <input type="text" id="apellidos" style="width: 250px;" required><br><br>
                 <label>Apodo:</label><br>
-                <input type="text" id="apodo" style="width: 250px;"><br><br>
+                <input type="text" id="apodo" style="width: 250px;" required><br><br>
                 <label>Fecha de nacimiento:</label><br>
-                <input type="date" id="nac_registro" style="width: 250px;"><br><br>
+                <input type="date" id="nac_registro" style="width: 250px;" required><br><br>
                 <label>Correo:</label><br>
-                <input type="email" id="email" style="width: 250px;"><br><br>
+                <input type="email" id="email" style="width: 250px;" required><br><br>
                 <label>Password:</label><br>
-                <input type="password" id="password" style="width: 250px;"><br><br>
+                <input type="password" id="password" style="width: 250px;" required><br><br>
                 <div class="botones_registro">
                     <div class="boton_inicio">
                         <a class="inicio" href='http://localhost:8080/PROYECTO/subir/web/'>Inicio</a>
                     </div>
-                    <div class="boton_inicio">
-                        <a class="envia_registro" href="">Enviar</a>
+                    <div class="boton_registro">
+                        <button class="envia_registro" href="">Enviar</button>
                     </div>
                 </div>
             </form>
