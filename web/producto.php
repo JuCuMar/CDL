@@ -38,37 +38,7 @@ $ruta = $_GET['ruta'];
         </form>
     </nav>
     
-
-
     <?php  $lista->showProduct($id, $ruta)  ?>
-    <!--<section id="section_descripcion">
-        <div class="container_info">
-            <div class="portada"><img src="img/videojuegos/vid1.jpg"></div>
-
-            <div class="container_compras">
-                <div class="titulo"><h2>The elder scrolls IV: Oblivion Remastered</h2></div>
-                <div class="precio">Precio: 31'99€</div>
-                <div class="stock">Stock disponible: 50 ud.</div>
-                <div class="botones">
-                <button type="submit" id="like"><img src="img/like.png"></button>
-                <a href="">
-                <button type="submit" id="comprar">Comprar</button>
-                </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="descripcion">
-            <h2>DESCRIPCIÓN</h2>
-
-            <p>Baldurs Gate 3 es un juego de rol (RPG) de fantasía desarrollado por Larian Studios. Es la tercera entrega principal de la aclamada serie Baldurs Gate y se basa en el sistema de reglas de la quinta edición de Dungeons & Dragons (D&D). 
-            El juego te sumerge en un mundo rico y detallado, los Reinos Olvidados, donde tus decisiones moldean la historia y determinan tu legado.
-            La aventura comienza con tu personaje siendo infectado por un parásito mental de los azotamentes. En tu búsqueda por librarte de esta amenaza, te cruzarás con otros supervivientes con destinos entrelazados. 
-            Juntos, formaréis un grupo y os embarcaréis en un viaje épico lleno de compañerismo, traición, sacrificio y la tentación del poder absoluto.
-            </p>
-
-        </div>
-    </section>-->
   
     </body>
 
