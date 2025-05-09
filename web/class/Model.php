@@ -156,7 +156,7 @@ class Model extends Connection {
         $apellidos = $request["apellidos"];
         $fecha_nac = $request["fecha_nac"];
 
-        $stmt = $this->conn->prepare("INSERT INTO Usuario (email,contraseña,alias,nombre,apellidos,fecha_nac) VALUES (?,?,?,?,?,CURDATE())");
+        $stmt = $this->conn->prepare("INSERT INTO Usuario (email,contraseña,alias,nombre,apellidos,fecha_nac) VALUES (?,?,?,?,?,?)");
         
         if (!$stmt->execute([$email, $contraseña, $alias, $nombre, $apellidos, $fecha_nac])) {
             echo "Error: " . $this->conn->error . "<br>";
