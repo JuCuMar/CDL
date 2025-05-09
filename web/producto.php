@@ -40,8 +40,8 @@ $ruta = $_GET['ruta'];
     
 
 
-    <?php /* $lista->showProduct($id, $ruta) */ ?>
-    <section id="section_descripcion">
+    <?php  $lista->showProduct($id, $ruta)  ?>
+    <!--<section id="section_descripcion">
         <div class="container_info">
             <div class="portada"><img src="img/videojuegos/vid1.jpg"></div>
 
@@ -68,7 +68,7 @@ $ruta = $_GET['ruta'];
             </p>
 
         </div>
-    </section>
+    </section>-->
   
     </body>
 

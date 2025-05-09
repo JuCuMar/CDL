@@ -15,7 +15,7 @@ class Model extends Connection {
         if ($result->rowCount() > 0) {
             echo '<section id="section_productos">';
             while($value = $result->fetch(PDO::FETCH_ASSOC)){
-                $ruta="img/videojuegos/vid'.$log.'.jpg";
+                $ruta="img/videojuegos/vid$log.jpg";
                 echo '<article class="container_producto">';
                 echo '<div class="recuadro"><a href="http://localhost:8080/PROYECTO/subir/web/producto.php?id='.$value['id'].'&ruta='.$ruta.'"><img class="miniatura" src="img/videojuegos/vid'.$log.'.jpg"></div>';
                 echo '<div class="pie_miniatura"><h3>' . $value['nombre'] . '</h3></div><div class="precio_miniatura">Precio: ' . $value['precio'] . '€</a></div>';
@@ -39,7 +39,7 @@ class Model extends Connection {
         if ($result->rowCount() > 0) {
             echo '<section id="section_productos">';
             while($value = $result->fetch(PDO::FETCH_ASSOC)){
-                $ruta="img/juegosmesa/mes'.$log.'.jpg";
+                $ruta="img/juegosmesa/mes$log.jpg";
                 echo '<article class="container_producto">';
                 echo '<div class="recuadro"><a href="http://localhost:8080/PROYECTO/subir/web/producto.php?id='.$value['id'].'&ruta='.$ruta.'"><img class="miniatura" src="img/juegosmesa/mes'.$log.'.jpg"></div>';
                 echo '<div class="pie_miniatura"><h3>' . $value['nombre'] . '</h3></div><div class="precio_miniatura">Precio: ' . $value['precio'] . '€</a></div>';
@@ -63,7 +63,7 @@ class Model extends Connection {
         if ($result->rowCount() > 0) {
             echo '<section id="section_productos">';
             while($value = $result->fetch(PDO::FETCH_ASSOC)){
-                $ruta="img/figuras/fig'.$log.'.jpg";
+                $ruta="img/figuras/fig$log.jpg";
                 echo '<article class="container_producto">';
                 echo '<div class="recuadro"><a href="http://localhost:8080/PROYECTO/subir/web/producto.php?id='.$value['id'].'&ruta='.$ruta.'"><img class="miniatura" src="img/figuras/fig'.$log.'.jpg"></div>';
                 echo '<div class="pie_miniatura"><h3>' . $value['nombre'] . '</h3></div><div class="precio_miniatura">Precio: ' . $value['precio'] . '€</a></div>';
@@ -87,7 +87,7 @@ class Model extends Connection {
         if ($result->rowCount() > 0) {
             echo '<section id="section_productos">';
             while($value = $result->fetch(PDO::FETCH_ASSOC)){
-                $ruta="img/libros/lib'.$log.'.jpg";
+                $ruta="img/libros/lib$log.jpg";
                 echo '<article class="container_producto">';
                 echo '<div class="recuadro"><a href="http://localhost:8080/PROYECTO/subir/web/producto.php?id='.$value['id'].'&ruta='.$ruta.'"><img class="miniatura" src="img/libros/lib'.$log.'.jpg"></div>';
                 echo '<div class="pie_miniatura"><h3>' . $value['nombre'] . '</h3></div><div class="precio_miniatura">Precio: ' . $value['precio'] . '€</a></div>';
@@ -121,15 +121,26 @@ class Model extends Connection {
         $log = 1;
         $result = $this->getProduct($id, $ruta);
         if ($result->rowCount() > 0) {
-            echo '<section>';
+            echo '<section id="section_descripcion">';
             while($value = $result->fetch(PDO::FETCH_ASSOC)){
                 echo '<div class="container_info">';
                 echo '<div class="portada"><img src="'.$ruta.'"></div>';
-                echo '<div class="">aaa</div>';
+                echo '<div class="container_compras">';
+                echo '<div class="titulo"><h2>'.$value['nombre'].'</h2></div>';
+                echo '<div class="precio">Precio: '.$value['precio'].'€</div>';
+                echo '<div class="stock">Stock disponible: '.$value['stock'].' ud.</div>';
+                echo '<div class="botones">';
+                echo '<button type="submit" id="like"><img src="img/like.png"></button>';
+                echo '<a href="">';
+                echo '<button type="submit" id="comprar">Comprar</button>';
+                echo '</a>';
                 echo '</div>';
+                echo '</div>';
+                echo '</div>';
+                echo '<div class="descripcion">';
                 echo '<h2>DESCRIPCIÓN</h2>';
                 echo '<p>'.$value['descripcion'].'</p>';
-
+                echo '</div>';
             }
             echo '</section>';
         } else {
