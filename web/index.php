@@ -37,7 +37,7 @@ require_once('autoloader.php');
     </nav>
 
     <h1>NOVEDADES</h1>
-    <section>
+    <section id="section_novedades">
         
         <div class="container_inicio">
             <div class="recuadro"><img class="miniatura_fija" src="img/novedades/nov1.jpg"></div>
