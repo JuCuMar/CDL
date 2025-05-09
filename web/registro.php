@@ -1,5 +1,10 @@
 <?php
-require_once('autoloader.php');
+require_once "autoloader.php";
+if (count($_POST) > 0) {
+    $lista = new Model();
+	$lista->addUser($_POST);
+	header("location: index.php");
+}
 ?>
 
 <!DOCTYPE html>
