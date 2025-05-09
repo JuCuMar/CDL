@@ -15,28 +15,34 @@ require_once('autoloader.php');
 <body>
     <br>
     <div class="container_registro">
-        <div class="registro">
-        <form action="" method='POST'>
-            <label>Nombre:</label><br>
-            <input type="text"><br><br>
-            <label>Apellidos:</label><br>
-            <input type="text"><br><br>
-            <label>Apodo:</label><br>
-            <input type="text"><br><br>
-            <label>Fecha de nacimiento:</label><br>
-            <input type="date" id="nac_registro"><br><br>
-            <label>Correo:</label><br>
-            <input type="email"><br><br>
-            <label>Password:</label><br>
-            <input type="password"><br><br>
-            <div class="botones_registro">
-            <a href="http://localhost:8080/PROYECTO/subir/web/"><button type="submit" id="envia_registro">Atrás</button></a>
-            <a ><button type="submit" id="envia_registro">Enviar</button></a>
+        <div class="marco_registro">
+            <div class="registro">
+            <form action="" method='POST'>
+                <label>Nombre:</label><br>
+                <input type="text" id="nombre" style="width: 250px;"><br><br>
+                <label>Apellidos:</label><br>
+                <input type="text" id="apellidos" style="width: 250px;"><br><br>
+                <label>Apodo:</label><br>
+                <input type="text" id="apodo" style="width: 250px;"><br><br>
+                <label>Fecha de nacimiento:</label><br>
+                <input type="date" id="nac_registro" style="width: 250px;"><br><br>
+                <label>Correo:</label><br>
+                <input type="email" id="email" style="width: 250px;"><br><br>
+                <label>Password:</label><br>
+                <input type="password" id="password" style="width: 250px;"><br><br>
+                <div class="botones_registro">
+                    <div class="boton_inicio">
+                        <a class="inicio" href='http://localhost:8080/PROYECTO/subir/web/'>Inicio</a>
+                    </div>
+                    <div class="boton_inicio">
+                        <a class="envia_registro" href="">Enviar</a>
+                    </div>
+                </div>
+            </form>
             </div>
-        </form>
-        </div>
 
-        <div class="logo_registro"><img src="img/logo1.jpeg"></div>
+            <div class="logo_registro"><img src="img/logo1.jpeg"></div>
+        </div>
     </div>
 </body>
 

@@ -14,8 +14,13 @@ $user = new Usuario();
 </head>
 
 <body>
-    <header>
-        <a href="#inicio"><img src="img/logo2.png"></a>
+<header>
+        <div id="logo">
+            <a href="http://localhost:8080/PROYECTO/subir/web/"><img src="img/logo2.png"></a>
+        </div>
+        <div id="login">
+            <a href="http://localhost:8080/PROYECTO/subir/web/registro.php"><img src="img/login.png"><p>Sing in</p></a>
+        </div>
     </header>
     <nav>
         <a href="#perfil">PERFIL</a>
