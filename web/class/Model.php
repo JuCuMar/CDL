@@ -147,6 +147,21 @@ class Model extends Connection {
             echo '0 results';
         }
     }
+
+    public function addUser($request) {
+        $email = $request["email"];
+        $contraseña = $request["contraseña"];
+        $alias = $request["alias"];
+        $nombre = $request["nombre"];
+        $apellidos = $request["apellidos"];
+        $fecha_nac = $request["fecha_nac"];
+
+        $stmt = $this->conn->prepare("INSERT INTO Usuario (email,contraseña,alias,nombre,apellidos,fecha_nac) VALUES (?,?,?,?,?,CURDATE())");
+        
+        if (!$stmt->execute([$email, $contraseña, $alias, $nombre, $apellidos, $fecha_nac])) {
+            echo "Error: " . $this->conn->error . "<br>";
+        }
+    }
 }
 
 ?>

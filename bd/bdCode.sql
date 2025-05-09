@@ -16,6 +16,7 @@ CREATE TABLE `Usuario` (
   `email` VARCHAR(50),
   `contraseña` varchar(30),
   `nombre` varchar(30),
+  `apellidos` varchar(50),
   `direccion` varchar(50) null,
   `telefono` int(9) null,
   PRIMARY KEY (`id`)
@@ -25,16 +26,16 @@ CREATE TABLE `Usuario` (
 # Dumping data for table 'Usuario'
 #
 
-INSERT INTO `Usuario` (`alias`, `fecha_nac`, `email`, `contraseña`, `nombre`, `direccion`, `telefono`) VALUES ('NoobSlayer99', '1988-03-15', 'noobslayer69@gmail.com', 'paceas', 'Paco', 'Calle Gran Vía 63, 28013 Madrid', 123456789);
-INSERT INTO `Usuario` (`alias`, `fecha_nac`, `email`, `contraseña`, `nombre`, `direccion`, `telefono`) VALUES ('GamerSensei', '1995-11-20', 'gamersensei@gmail.com', 'asdpef', 'Marcos', 'Calle Leonardo Prieto Castro 8, 28040 Madrid', 234567891);
-INSERT INTO `Usuario` (`alias`, `fecha_nac`, `email`, `contraseña`, `nombre`, `direccion`, `telefono`) VALUES ('ComboBreaker', '1999-07-04', 'combobraker@gmail.com', 'asdovr', 'Eufrasio', 'Calle Noviciado 5, 28015 Madrid', 345678912);
-INSERT INTO `Usuario` (`alias`, `fecha_nac`, `email`, `contraseña`, `nombre`, `direccion`, `telefono`) VALUES ('ShadowBuyer', '1985-09-10', 'shadowbuyer@gmail.com', 'asdvrv', 'Vicente', 'Avenida de la Constitución 12, 41004 Sevilla', 456789123);
-INSERT INTO `Usuario` (`alias`, `fecha_nac`, `email`, `contraseña`, `nombre`, `direccion`, `telefono`) VALUES ('RetroPixel', '2000-01-28', 'retropixel@gmail.com', 'asvrvfsa', 'Francisco', 'Calle de la Paz 45, 08002 Barcelona', 567891234);
-INSERT INTO `Usuario` (`alias`, `fecha_nac`, `email`, `contraseña`, `nombre`, `direccion`, `telefono`) VALUES ('LagMaster', '1997-06-12', 'lagmaster@gmail.com', 'sd3f', 'Paca', 'Calle San Fernando 22, 29001 Málaga', 678912345);
-INSERT INTO `Usuario` (`alias`, `fecha_nac`, `email`, `contraseña`, `nombre`, `direccion`, `telefono`) VALUES ('ManaHunter', '1992-12-01', 'manahunter@gmail.com', '8415vrass', 'Laura', 'Calle de la Libertad 10, 46001 Valencia', 789123456);
-INSERT INTO `Usuario` (`alias`, `fecha_nac`, `email`, `contraseña`, `nombre`, `direccion`, `telefono`) VALUES ('AFKCollector', '1989-04-22', 'afkcollector@gmail.com', '821v5gd6c', 'Fernando', 'Calle Mayor 30, 37001 Salamanca', 891234567);
-INSERT INTO `Usuario` (`alias`, `fecha_nac`, `email`, `contraseña`, `nombre`, `direccion`, `telefono`) VALUES ('LootSeeker', '1996-08-08', 'lootseeker@gmail.com', '854269asddd', 'Maria', 'Calle del Mar 5, 08003 Barcelona', 912345678);
-INSERT INTO `Usuario` (`alias`, `fecha_nac`, `email`, `contraseña`, `nombre`, `direccion`, `telefono`) VALUES ('XPAddict', '1994-02-18', 'xpaddict@gmail.com', '165226dd7v1d5', 'Tomas', 'Calle de la Reina 18, 28004 Madrid', 134567982);
+INSERT INTO `Usuario` (`alias`, `fecha_nac`, `email`, `contraseña`, `nombre`, `apellidos`, `direccion`, `telefono`) VALUES ('NoobSlayer99', '1988-03-15', 'noobslayer69@gmail.com', 'paceas', 'Paco', 'Martinez Martinez', 'Calle Gran Vía 63, 28013 Madrid', 123456789);
+INSERT INTO `Usuario` (`alias`, `fecha_nac`, `email`, `contraseña`, `nombre`, `apellidos`, `direccion`, `telefono`) VALUES ('GamerSensei', '1995-11-20', 'gamersensei@gmail.com', 'asdpef', 'Marcos', 'Martinez Martinez', 'Calle Leonardo Prieto Castro 8, 28040 Madrid', 234567891);
+INSERT INTO `Usuario` (`alias`, `fecha_nac`, `email`, `contraseña`, `nombre`, `apellidos`, `direccion`, `telefono`) VALUES ('ComboBreaker', '1999-07-04', 'combobraker@gmail.com', 'asdovr', 'Eufrasio', 'Martinez Martinez', 'Calle Noviciado 5, 28015 Madrid', 345678912);
+INSERT INTO `Usuario` (`alias`, `fecha_nac`, `email`, `contraseña`, `nombre`, `apellidos`, `direccion`, `telefono`) VALUES ('ShadowBuyer', '1985-09-10', 'shadowbuyer@gmail.com', 'asdvrv', 'Vicente', 'Martinez Martinez', 'Avenida de la Constitución 12, 41004 Sevilla', 456789123);
+INSERT INTO `Usuario` (`alias`, `fecha_nac`, `email`, `contraseña`, `nombre`, `apellidos`, `direccion`, `telefono`) VALUES ('RetroPixel', '2000-01-28', 'retropixel@gmail.com', 'asvrvfsa', 'Francisco', 'Martinez Martinez', 'Calle de la Paz 45, 08002 Barcelona', 567891234);
+INSERT INTO `Usuario` (`alias`, `fecha_nac`, `email`, `contraseña`, `nombre`, `apellidos`, `direccion`, `telefono`) VALUES ('LagMaster', '1997-06-12', 'lagmaster@gmail.com', 'sd3f', 'Paca', 'Martinez Martinez', 'Calle San Fernando 22, 29001 Málaga', 678912345);
+INSERT INTO `Usuario` (`alias`, `fecha_nac`, `email`, `contraseña`, `nombre`, `apellidos`, `direccion`, `telefono`) VALUES ('ManaHunter', '1992-12-01', 'manahunter@gmail.com', '8415vrass', 'Laura', 'Martinez Martinez', 'Calle de la Libertad 10, 46001 Valencia', 789123456);
+INSERT INTO `Usuario` (`alias`, `fecha_nac`, `email`, `contraseña`, `nombre`, `apellidos`, `direccion`, `telefono`) VALUES ('AFKCollector', '1989-04-22', 'afkcollector@gmail.com', '821v5gd6c', 'Fernando', 'Martinez Martinez', 'Calle Mayor 30, 37001 Salamanca', 891234567);
+INSERT INTO `Usuario` (`alias`, `fecha_nac`, `email`, `contraseña`, `nombre`, `apellidos`, `direccion`, `telefono`) VALUES ('LootSeeker', '1996-08-08', 'lootseeker@gmail.com', '854269asddd', 'Maria', 'Martinez Martinez', 'Calle del Mar 5, 08003 Barcelona', 912345678);
+INSERT INTO `Usuario` (`alias`, `fecha_nac`, `email`, `contraseña`, `nombre`, `apellidos`, `direccion`, `telefono`) VALUES ('XPAddict', '1994-02-18', 'xpaddict@gmail.com', '165226dd7v1d5', 'Tomas', 'Martinez Martinez', 'Calle de la Reina 18, 28004 Madrid', 134567982);
 
 #
 # Table structure for table 'Pedido'
