@@ -42,7 +42,7 @@ if (count($_POST) > 0) {
                     <div class="boton_inicio">
                     <button class="envia_registro" href="" type="submit" name="submit">Enviar</button>
                     </div>
-                    </div>
+                    
                 </div>
             </form>
             </div>
