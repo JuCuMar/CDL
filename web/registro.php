@@ -17,7 +17,7 @@ if (count($_POST) > 0) {
     <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
 </head>
 
-<body>
+<body style="background: linear-gradient(#336665, #004443);">
     <br>
     <div class="container_registro">
         <div class="marco_registro">
